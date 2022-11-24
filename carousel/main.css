@@ -168,6 +168,7 @@ input[type="range"]:hover {
 .feedbackcarousel {
     /* width: 50%; */
     max-width: 50%;
+    display: flex;
 }
 
 @media screen and (max-width: 700px) {
@@ -201,6 +202,7 @@ input[type="range"]:hover {
     color: #fff;
     text-align: center;
     margin: 1.5em auto;
+    height: 100%;
 }
 
 .feedbackcarousel__quotation {
@@ -212,8 +214,7 @@ input[type="range"]:hover {
 
 .feedbackcarousel__quotation--left {
     position: relative;
-    /* top: -2em; */
-    align-items: flex-start;
+    align-self: start;
     justify-content: flex-start;
 }
 
@@ -276,4 +277,8 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.hide {
+    display: none;
 }

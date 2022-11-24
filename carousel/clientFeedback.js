@@ -1,5 +1,5 @@
-const clientFeedback = [
+export const clientFeedback = [
     "I've had my second treatment with Michelle and she doesn't disappoint. Both times I came in with a lot of restriction and tightness throughout my mid back and rib cage. I felt so free and loose and able to move again after both treatments. She is a very skilled and intuitive healer.",
     "I came into my appointment with Michelle with a two week long migraine. I left with tons of energy, no headache, and still migraine free two days after my appointment!",
     "My treatment with Michelle brought to light some issues I didn't know were contributing to my daily pain. I left my session feeling refueled and more aware of my body and movement, and relieved to have started this process. <Despite me not knowing much about this discipline,> Michelle was very insightful, and I left feeling more confident about my therapeutic journey. I'm already looking forward to my next session!",
-]
+];
