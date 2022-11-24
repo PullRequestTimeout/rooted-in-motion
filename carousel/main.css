@@ -176,14 +176,13 @@ input[type="range"]:hover {
         margin: 1em;
     }
 
-    .feedback-plant {
-        display: none;
+    .feedback-plant-1 {
+        opacity: 0.3;
     }
 }
 
 .feedback-plant-1 {
     position: absolute;
-
     right: 10%;
     top: 0;
 }
@@ -205,17 +204,23 @@ input[type="range"]:hover {
 }
 
 .feedbackcarousel__quotation {
+    display: flex;
+    flex-direction: column;
     min-width: 2em;
+    height: 100%;
 }
 
 .feedbackcarousel__quotation--left {
     position: relative;
-    top: -2em;
+    /* top: -2em; */
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .feedbackcarousel__quotation--right {
     position: relative;
-    top: 2em;
+    /* top: 5em; */
+    align-self: end;
 }
 
 .feedbackcarousel__navigation {
