@@ -246,7 +246,7 @@ input[type="range"]:hover {
 }
 
 .feedbackcarousel__navigation input[type="radio"] {
-    /* display: none; */
+    display: none;
 }
 
 .feedbackcarousel__navigation input[type="radio"] label {
@@ -291,4 +291,38 @@ section {
 
 .hide {
     display: none;
+}
+
+.fade-out {
+    animation: fade-out 0.5s;
+    animation-delay: 0.5s;
+}
+
+.fade-in {
+    animation: fade-in 0.5s;
+    animation-delay: 0.5s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
 }

@@ -41,14 +41,14 @@ const changeRadioRight = () => {
 
 // const changeRadioLeft = () => {
 //     const navDots = document.getElementsByName('carouselNavDots');
-//     // console.log(navDots.length);
 //     for (i = 0; i < navDots.length; i++) {
-//         if (navDots[i].checked && navDots[i].getAttribute('value') < navDots.length - 1){
+//         if (navDots[i].checked && navDots[i].getAttribute('value') > 0){
 //             console.log("true")
 //             document.getElementById(`feedbackCarouselNav${i-1}`).checked = true;
 //             updateSlide();
 //         } else if (navDots[i].getAttribute('value') == 0) {
-//             document.getElementById(`feedbackCarouselNav${navDots.length - 1}`).checked = true;
+//             console.log("0")
+//             document.getElementById(`feedbackCarouselNav2`).checked = true;
 //             updateSlide();
 //         }
 //     }
