@@ -206,8 +206,8 @@ input[type="range"]:hover {
 }
 
 .feedbackcarousel__quotation {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* flex-direction: column; */
     min-width: 2em;
     height: 100%;
 }
@@ -234,14 +234,24 @@ input[type="range"]:hover {
 
 .feedbackcarousel__navigation svg {
     position: relative;
-    width: 2.5em;
-    height: 2em;
+    width: 3em;
+    height: auto;
     top: 0;
 }
 
 .feedbackcarousel__navigation-dot {
     position: relative;
-    top: -2px;
+    font-size: 2em;
+    /* top: -2px; */
+}
+
+.feedbackcarousel__navigation input[type="radio"] {
+    /* display: none; */
+}
+
+.feedbackcarousel__navigation input[type="radio"] label {
+    color: #fff;
+    cursor: pointer;
 }
 
 /*|| Utilities --------------------------------------------------------------------------------------- */

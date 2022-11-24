@@ -51,8 +51,8 @@
 
             <h3 class="title title--white">What my clients think</h3>
             <!-- Carousel -->
-            <div class="feedbackcarousel">
-                <div class="feedbackcarousel__content hide">
+            <div class="feedbackcarousel" id="feedbackCarousel">
+                <div class="feedbackcarousel__content " id="carouselContent0">
                     <svg class="feedbackcarousel__quotation feedbackcarousel__quotation--left" width="98" height="79"
                         viewBox="0 0 98 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -72,7 +72,7 @@
                             fill="#EDD1AB" fill-opacity="0.7" />
                     </svg>
                 </div>
-                <div class="feedbackcarousel__content">
+                <div class="feedbackcarousel__content hide" id="carouselContent1">
                     <svg class="feedbackcarousel__quotation feedbackcarousel__quotation--left" width="98" height="79"
                         viewBox="0 0 98 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -89,7 +89,7 @@
                             fill="#EDD1AB" fill-opacity="0.7" />
                     </svg>
                 </div>
-                <div class="feedbackcarousel__content hide">
+                <div class="feedbackcarousel__content hide" id="carouselContent2">
                     <svg class="feedbackcarousel__quotation feedbackcarousel__quotation--left" width="98" height="79"
                         viewBox="0 0 98 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -119,9 +119,12 @@
                     </svg>
                 </button>
 
-                <button class="btn feedbackcarousel__navigation-dot" id="feedbackCarouselNav1">•</button>
-                <button class="btn feedbackcarousel__navigation-dot" id="feedbackCarouselNav2">•</button>
-                <button class="btn feedbackcarousel__navigation-dot" id="feedbackCarouselNav3">•</button>
+                <input type="radio" name="carouselNavDots" id="feedbackCarouselNav0" value="0" selected>
+                <label class="btn feedbackcarousel__navigation-dot" for="feedbackCarouselNav0" tabindex="0">•</label>
+                <input type="radio" name="carouselNavDots" id="feedbackCarouselNav1" value="1">
+                <label class="btn feedbackcarousel__navigation-dot" for="feedbackCarouselNav1" tabindex="0">•</label>
+                <input type="radio" name="carouselNavDots" id="feedbackCarouselNav2" value="2">
+                <label class="btn feedbackcarousel__navigation-dot" for="feedbackCarouselNav2" tabindex="0">•</label>
 
                 <button class="btn" id="feedbackCarouselNavRight">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right"
@@ -143,7 +146,7 @@
     <footer>
 
     </footer>
-    <script src="carousel.js" type="module"></script>
+    <script src="carousel.js"></script>
 </body>
 
 </html>
