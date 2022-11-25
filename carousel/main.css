@@ -163,29 +163,20 @@ input[type="range"]:hover {
     color: #fff;
 }
 
-/*|| Carousel ---------------------------------------------------------------------------------------- */
+/*|| Carousel Section ---------------------------------------------------------------------------------------- */
 
-.feedbackcarousel {
-    /* width: 50%; */
-    max-width: 50%;
-    display: flex;
-}
-
-@media screen and (max-width: 700px) {
-    .feedbackcarousel {
-        max-width: unset;
-        margin: 1em;
-    }
-
-    .feedback-plant-1 {
-        opacity: 0.3;
-    }
-}
 
 .feedback-plant-1 {
     position: absolute;
     right: 10%;
     top: 0;
+}
+
+
+.feedbackcarousel {
+    /* width: 50%; */
+    max-width: 50%;
+    display: flex;
 }
 
 .feedbackcarousel__content {
@@ -237,9 +228,11 @@ input[type="range"]:hover {
     width: 3em;
     height: auto;
     top: 0;
+    /* opacity: 0.5; */
 }
 
 .feedbackcarousel__navigation-dot {
+    user-select: none;
     position: relative;
     font-size: 2em;
     /* top: -2px; */
@@ -252,6 +245,26 @@ input[type="range"]:hover {
 .feedbackcarousel__navigation input[type="radio"] label {
     color: #fff;
     cursor: pointer;
+}
+
+.feedbackcarousel__navigation input[type="radio"]:checked+label,
+.feedbackcarousel__navigation input[type="radio"]:active+label {
+    opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+    .feedbackcarousel {
+        max-width: unset;
+        margin: 1em;
+    }
+
+    .feedback-plant-1 {
+        opacity: 0.3;
+    }
+
+    .feedbackcarousel__navigation {
+        margin: 0;
+    }
 }
 
 /*|| Utilities --------------------------------------------------------------------------------------- */
@@ -271,7 +284,7 @@ section {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    opacity: 0.7;
+    opacity: 0.5;
     cursor: pointer;
     border: none;
     background-color: transparent;

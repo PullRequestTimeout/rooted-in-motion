@@ -1,8 +1,6 @@
-const slideArray = Array.from(document.getElementById('feedbackCarousel').children);
-
 const updateSlide = () => {
     const navDots = document.getElementsByName('carouselNavDots');
-    
+    const slideArray = Array.from(document.getElementById('feedbackCarousel').children);
     for (i = 0; i < navDots.length; i++) {
         if (navDots[i].checked){
             let j = navDots[i].value;
@@ -21,13 +19,10 @@ const updateSlide = () => {
 
 document.getElementsByName("carouselNavDots").forEach(element => element.addEventListener("input", updateSlide));
 
-// Left and right buttons
-// const leftNav = document.getElementById('feedbackCarouselNavLeft');
-// const rightNav  = document.getElementById('feedbackCarouselNavRight');
 
 const changeRadioRight = () => {
     const navDots = document.getElementsByName('carouselNavDots');
-    // console.log(navDots.length);
+    
     for (i = 0; i < navDots.length; i++) {
         if (navDots[i].checked && navDots[i].getAttribute('value') < navDots.length - 1){
             document.getElementById(`feedbackCarouselNav${i+1}`).checked = true;
@@ -39,21 +34,22 @@ const changeRadioRight = () => {
     }
 }
 
-// const changeRadioLeft = () => {
-//     const navDots = document.getElementsByName('carouselNavDots');
-//     for (i = 0; i < navDots.length; i++) {
-//         if (navDots[i].checked && navDots[i].getAttribute('value') > 0){
-//             console.log("true")
-//             document.getElementById(`feedbackCarouselNav${i-1}`).checked = true;
-//             updateSlide();
-//         } else if (navDots[i].getAttribute('value') == 0) {
-//             console.log("0")
-//             document.getElementById(`feedbackCarouselNav2`).checked = true;
-//             updateSlide();
-//         }
-//     }
-// }
+const changeRadioLeft = () => {
+    const navDots = document.getElementsByName('carouselNavDots');
+    
+    for (i = 0; i < navDots.length; i++) {
+        if (navDots[i].checked && navDots[i].getAttribute('value') > 0){
+            document.getElementById(`feedbackCarouselNav${i-1}`).checked = true;
+            updateSlide();
+        } else if (navDots[i].checked && navDots[i].getAttribute('value') == 0) {
+            document.getElementById(`feedbackCarouselNav${navDots.length - 1}`).checked = true;
+            updateSlide();
+        }
+    }
+}
 
-// document.getElementById('feedbackCarouselNavLeft').addEventListener("click", changeRadioLeft);
+// document.body.onload = changeRadioRight(), setInterval(changeRadioRight, 10000)
+
+document.getElementById('feedbackCarouselNavLeft').addEventListener("click", changeRadioLeft);
 document.getElementById('feedbackCarouselNavRight').addEventListener("click", changeRadioRight);
 
