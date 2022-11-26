@@ -142,13 +142,28 @@ input[type="range"]:hover {
 
 /*|| Colours ----------------------------------------------------------------------------------------- */
 
-/* TODO: Grab all hex codes from Sean and create named variables */
-/*
 :root {
-	--clr-accent: ;
-	--clr-accent-light: ;
-	--clr-accent-dark: ;
+    /* Greyscale */
+    --clr-black: #0C0D0C;
+    --clr-greyscale-1: #303630;
+    --clr-greyscale-2: #616B61;
+    --clr-greyscale-3: #949E94;
+
+    /* Bronze */
+    --clr-bronze-1: #CC8328;
+    --clr-bronze-2: #E59C42;
+    --clr-bronze-3: #ECB46F;
+    --clr-bronze-4: #F2CB9C;
+    --clr-bronze-5: #F6E8D5;
+
+    /* Pine */
+    --clr-pine-1: #212C21;
+    --clr-pine-2: #374937;
+    --clr-pine-3: #527A52;
+    --clr-pine-4: #99B299;
+    --clr-pine-5: #B6C8B6;
 }
+
 */
 /*|| Typography -------------------------------------------------------------------------------------- */
 
