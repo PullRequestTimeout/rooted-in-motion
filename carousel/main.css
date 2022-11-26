@@ -155,7 +155,7 @@ input[type="range"]:hover {
 .title {
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
-    margin: 1em;
+    margin: 0.5em;
     text-align: center;
 }
 
@@ -216,7 +216,7 @@ input[type="range"]:hover {
 }
 
 .feedbackcarousel__navigation {
-    margin: 2em;
+    /* margin: 2em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,6 +253,10 @@ input[type="range"]:hover {
 }
 
 @media screen and (max-width: 700px) {
+    .feedbackcarousel__content {
+        font-size: 0.9em;
+    }
+
     .feedbackcarousel {
         max-width: unset;
         margin: 1em;
