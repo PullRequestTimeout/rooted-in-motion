@@ -156,17 +156,23 @@ input[type="range"]:hover {
     --clr-bronze-4: #F2CB9C;
     --clr-bronze-5: #F6E8D5;
 
+    /* Section Bronze */
+    /* --clr-bronze-6: #E8D0B0; */
+
     /* Pine */
     --clr-pine-1: #212C21;
     --clr-pine-2: #374937;
     --clr-pine-3: #527A52;
     --clr-pine-4: #99B299;
     --clr-pine-5: #B6C8B6;
+
+    /* Footer */
+    --clr-footer: #1D201D;
 }
 
 /*|| Typography -------------------------------------------------------------------------------------- */
 
-.title {
+/* .title {
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     margin: 0.5em;
@@ -175,7 +181,33 @@ input[type="range"]:hover {
 
 .title--white {
     color: #fff;
+} */
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--clr-black);
 }
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: var(--clr-black);
+}
+
+/*|| Global -------------------------------------------------------------------------------------------------- */
+
+html {
+    background-color: var(--clr-bronze-5);
+}
+
+section {
+    padding: 4em 0;
+}
+
+.section--greyscale {}
+
+.section--bronze {}
+
+
 
 /*|| Carousel Section ---------------------------------------------------------------------------------------- */
 
@@ -286,16 +318,6 @@ input[type="range"]:hover {
 
 /*|| Utilities --------------------------------------------------------------------------------------- */
 
-main {
-    background-color: #303630;
-    height: 100vh;
-}
-
-section {
-    padding: 4em 0;
-    background-color: #303630;
-}
-
 .btn {
     display: flex;
     flex-direction: column;
@@ -306,6 +328,15 @@ section {
     border: none;
     background-color: transparent;
     /* height: 2em; */
+}
+
+.btn--primary {
+    background-color: var(--clr-pine-3);
+    font-family: 'Lato', sans-serif;
+    border-radius: 0.5em;
+    width: 6em;
+    padding: 1em 2em;
+    opacity: 1;
 }
 
 .btn:hover {
