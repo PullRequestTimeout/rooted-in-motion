@@ -3,9 +3,7 @@
 .home-hero {
     margin-top: 4em;
     display: grid;
-    /* width: 100%; */
     grid-template-columns: 1fr 1fr;
-    /* border: 1px solid red; */
     background: linear-gradient(#F6E8D5, #EDD1AB);
 }
 
@@ -35,8 +33,6 @@
     position: absolute;
     z-index: -1;
     transform: scaleX(110%);
-    /* transform: translateY(-0.4em); */
-    /* transform: translateX(-0.2em); */
     transform: translate(-0.2em, -0.25em);
 }
 
@@ -49,13 +45,10 @@
 }
 
 .home-hero__image picture img {
-
     margin: auto;
-    /* box-shadow: 1em 2em 1em var(--clr-black); */
     filter: drop-shadow(0px 0px 1em var(--clr-bronze-2));
     position: relative;
     z-index: +1;
-    /* opacity: 0.2; */
 }
 
 .home-hero__image svg {
@@ -115,4 +108,64 @@
     z-index: 0;
     bottom: 0;
     left: 4em;
+}
+
+/*|| Benefits -------------------------------------------------------------------------------------------------- */
+
+.benefits-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.benefits-section__text {
+    grid-column-start: 1;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 4em 6em;
+    gap: 2em;
+}
+
+.benefits-section__title {
+    font-size: 2em;
+    position: relative;
+    z-index: 10;
+}
+
+.benefits-section__chalk {
+    position: absolute;
+    z-index: -1;
+    /* transform: scaleX(90%); */
+    transform: translate(0em, -0.3em);
+}
+
+.benefits-section__text p {
+    line-height: 1.6;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.benefits-section__text li {
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+.benefits-section__text li::before {
+    content: '✓';
+    color: var(--clr-pine-3);
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.benefits-section__image {
+    justify-self: center;
+}
+
+.benefits-section__image img {
+    position: relative;
+    width: 350px;
+    justify-self: center;
+    border-radius: 0.5em;
+    filter: drop-shadow(0 0 0.5em var(--clr-black)) drop-shadow(1em 1em 0 var(--clr-pine-4));
 }
