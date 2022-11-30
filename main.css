@@ -184,7 +184,8 @@ input[type="range"]:hover {
     color: #fff;
 } */
 
-h2 {
+h2,
+h3 {
     font-family: 'Raleway', sans-serif;
     color: var(--clr-black);
 }
@@ -420,6 +421,7 @@ section {
     border-radius: 0.5em;
     width: 6em;
     padding: 1em 2em;
+    z-index: 10;
 }
 
 .btn--primary {
@@ -435,10 +437,11 @@ section {
 .btn--secondary {
     border: 2px solid var(--clr-pine-4);
     color: var(--clr-pine-4);
+    transition: 0.2s;
 }
 
 .btn--secondary:hover {
-    color: #fff;
+    color: var(--clr-pine-2);
     background-color: var(--clr-pine-4);
 }
 
