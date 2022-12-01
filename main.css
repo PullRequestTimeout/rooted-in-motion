@@ -141,6 +141,10 @@ input[type="range"]:hover {
     cursor: pointer;
 }
 
+img {
+    user-select: none;
+}
+
 /*|| Colours ----------------------------------------------------------------------------------------- */
 
 :root {
@@ -196,6 +200,24 @@ ul {
     color: var(--clr-black);
 }
 
+/* Just for fun */
+
+a::selection,
+h1::selection,
+h2::selection,
+h3::selection {
+    /* text-shadow: 3px 3px 3px var(--clr-bronze-2); */
+    background-color: var(--clr-bronze-2);
+    color: #fff;
+}
+
+p::selection,
+ul::selection,
+li::selection {
+    background-color: var(--clr-pine-3);
+    color: #fff;
+}
+
 /*|| Global -------------------------------------------------------------------------------------------------- */
 
 html {
@@ -220,7 +242,8 @@ section {
     /* background-color: var(--clr-bronze-5); */
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    gap: 2em;
+    align-items: center;
+    gap: 0 2em;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -228,11 +251,16 @@ section {
     padding: 2em 6em;
     justify-content: space-between;
     font-family: 'Lato', sans-serif;
-    /* border: 1px solid red; */
 }
+
+/* .navbar--scroll {
+    top: -100%;
+
+} */
 
 .navbar__logo {
     align-self: center;
+    display: block;
 }
 
 .navbar__logo .navbar__logo--transition1,
