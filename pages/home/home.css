@@ -148,7 +148,8 @@
 
 .benefits-section__text li {
     line-height: 1.6;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: 300;
 }
 
 .benefits-section__text li::before {

@@ -259,8 +259,6 @@ section {
 }
 
 .navbar__links {
-    /* display: flex; */
-    /* justify-content: space-around; */
     position: relative;
 
 }
@@ -412,6 +410,7 @@ section {
 .btn {
     display: flex;
     flex-direction: column;
+    user-select: none;
     justify-content: center;
     color: #fff;
     font-family: 'Lato', sans-serif;
@@ -431,7 +430,7 @@ section {
 }
 
 .btn--primary:hover {
-    background-color: var(--clr-pine-2)
+    background-color: var(--clr-bronze-2)
 }
 
 .btn--secondary {
