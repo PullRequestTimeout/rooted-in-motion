@@ -1,0 +1,357 @@
+/*|| Resets ------------------------------------------------------------------------------------------ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Small UX improvement */
+input[type="range"]:hover {
+    cursor: pointer;
+}
+
+img {
+    user-select: none;
+}
+
+
+/*||Navbar--------------------------------------------------------------------------------------------------------------*/
+
+
+html {
+    background-color: #F6E8D5;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    display: block;
+    padding: 1em;
+    user-select: none;
+}
+
+header nav {
+    position: absolute;
+    /*text-align: left;*/
+    z-index: 1001;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    transform: scale(1, 0);
+    transform: transform 400ms ease-in-out;
+    transform-origin: top;
+}
+
+header nav ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 75vh;
+    z-index: 999;
+}
+
+header nav li {
+    padding: 1em 1em;
+}
+
+.navbar__link-group {
+    margin: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar__linebreak {
+    height: 2px;
+    width: 6rem;
+    background-color: #E59C42;
+}
+
+.navbar__links {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.navbar__links:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: auto;
+    background: #527A52;
+    transition: 0.5s ease;
+    transform: scale(0, 1);
+    transform-origin: left;
+}
+
+.navbar__links:hover:after {
+    transform: scale(1, 1);
+    transform-origin: left;
+}
+
+.navbar__checkbox {
+    display: none;
+}
+
+.navbar__checkbox:checked~nav {
+    transform: scale(1, 1);
+    transition: transform 0.15s ease-in-out;
+}
+
+.navbar__checkbox:not(:checked)~nav {
+    transform: scale(1, 0);
+    transition: transform 0.15s ease-in-out;
+}
+
+.navbar__hamburger {
+    margin-right: 1em;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* 1100 seems to work good, but I'll keep it at 800 
+for now and tweak it more when it's part of the larger file */
+
+@media screen and (min-width: 800px) {
+    .navbar__hamburger {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: unset;
+        /* padding: 0 2rem; */
+    }
+
+    .navbar__logo {
+        padding-right: 15vw;
+    }
+
+    .navbar__logo,
+    header a {
+        width: fit-content;
+    }
+
+    .navbar__checkbox:not(:checked)~nav {
+        all: unset;
+    }
+
+    nav {
+        all: unset;
+    }
+
+    header nav ul {
+        margin: 0;
+        height: unset;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .navbar__link-group {
+        display: flex;
+        flex-direction: row;
+        justify-self: end;
+        margin: 0;
+
+    }
+
+    .nav__linebreak {
+        display: none;
+    }
+
+    .navbar__links {
+        margin: 0 1em;
+        text-transform: unset;
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    .btn--cta {
+        justify-self: end;
+        /* padding-right: 6em; */
+        min-width: 162px;
+    }
+}
+
+/* Utility */
+.btn {
+    font-family: sans-serif;
+    user-select: none;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    z-index: 10;
+}
+
+.btn--primary {
+    background-color: #527A52;
+    transition: 0.2s;
+}
+
+.btn--primary:hover {
+    background-color: #E59C42;
+}
