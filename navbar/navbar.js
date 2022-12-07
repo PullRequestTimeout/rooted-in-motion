@@ -17,8 +17,8 @@ const changeNavStyle = () => {
         logo2.style.fill = '#E59C42';
         logo3.style.stroke = '#E59C42';
     } else {
-        header.style.backgroundColor = 'transparent';
-        nav.style.backgroundColor = 'transparent';
+        // header.style.backgroundColor = 'transparent';
+        // nav.style.backgroundColor = 'transparent';
         navHamburger.style.color = '#000000'
         logo1.style.fill = '#212C21';
         logo2.style.fill = '#527A52';
