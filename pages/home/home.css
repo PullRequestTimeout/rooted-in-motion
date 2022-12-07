@@ -63,7 +63,7 @@
     position: relative;
     z-index: 1;
     width: 15em;
-    padding: 1em;
+    margin: 1em;
     /* opacity: 0.1; */
 }
 
@@ -151,8 +151,8 @@
     }
 
     .home-hero__image picture img {
-        width: 25em;
-        padding-right: 6em;
+        width: 24em;
+        padding-right: 5em;
     }
 
     .home-hero__svg1 {
@@ -161,7 +161,7 @@
     }
 
     .home-hero__svg2 {
-        right: 25em;
+        right: 26em;
         top: 3em;
         width: 7em;
     }
