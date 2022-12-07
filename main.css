@@ -253,6 +253,17 @@ header {
     display: block;
     padding: 1em;
     user-select: none;
+    transition: 0.2s ease;
+}
+
+.navbar__logo:hover .navbar__logo--transition1 {
+    fill: var(--clr-bronze-2);
+    transition: 0.2s;
+}
+
+.navbar__logo:hover .navbar__logo--transition2 {
+    stroke: var(--clr-bronze-2);
+    transition: 0.2s;
 }
 
 header nav {
