@@ -296,7 +296,7 @@ header nav ul {
 }
 
 header nav li {
-    padding: 1em 1em;
+    /* padding: 1em 1em; */
 }
 
 .navbar__link-group {
@@ -366,7 +366,7 @@ header nav li {
 /* 1100 seems to work well, but I'll keep it at 800 
 for now and tweak it more when it's part of the larger file */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 640px) {
     .navbar__hamburger {
         display: none;
     }
@@ -381,7 +381,7 @@ for now and tweak it more when it's part of the larger file */
 
     .navbar__logo {
         padding: 1em 0;
-        padding-right: 15vw;
+        /* padding-right: 15vw; */
         margin-left: 6em;
     }
 
@@ -429,6 +429,16 @@ for now and tweak it more when it's part of the larger file */
         justify-self: end;
         /* padding-right: 6em; */
         min-width: 162px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .navbar__logo {
+        padding-right: 15vw;
+    }
+
+    header nav li {
+        padding: 0;
     }
 }
 
