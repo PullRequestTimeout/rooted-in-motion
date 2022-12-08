@@ -300,7 +300,8 @@
 .benefits-section__chalk {
     position: absolute;
     z-index: -1;
-    transform: translate(0em, -0.3em);
+    width: 2.5em;
+    transform: translateY(-0.4em);
 }
 
 .benefits-section__text p,
