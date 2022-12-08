@@ -195,7 +195,8 @@ h3 {
 }
 
 p,
-ul {
+ul,
+a {
     font-family: 'Lato', sans-serif;
     color: var(--clr-black);
 }
@@ -328,7 +329,6 @@ header nav ul {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-family: sans-serif;
 }
 
 .navbar__links:after {
