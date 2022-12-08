@@ -220,7 +220,17 @@
     height: 5em;
     background-color: var(--clr-bronze-5);
     border-radius: 0.5em;
+    transition: 0.2s;
 }
+
+.client-symptoms__card:hover {
+    background-color: var(--clr-bronze-2);
+}
+
+/* .client-symptoms__card:hover svg {
+    fill: #fff;
+    stroke: #fff;
+} */
 
 .client-symptoms__card p {
     position: relative;
