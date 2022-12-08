@@ -223,6 +223,7 @@ li::selection {
 html {
     background-color: var(--clr-bronze-5);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 section {
