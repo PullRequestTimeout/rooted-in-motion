@@ -439,10 +439,13 @@
 /*|| Vision -------------------------------------------------------------------------------------------------- */
 
 .vision__hero {
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2em;
     justify-items: center;
+    padding: 1em;
+
 }
 
 .vision__hero a {
@@ -459,6 +462,17 @@
 .vision__text {
     text-align: center;
     color: var(--clr-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-start: 2;
+    gap: 2em;
+}
+
+.vision__quote {
+    line-height: 1.6;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
 .vision__image {
@@ -468,18 +482,73 @@
 }
 
 .vision__image img {
+    position: relative;
     width: 16em;
     justify-self: center;
     filter: drop-shadow(1em 1em 1em var(--clr-pine-1));
-    /* opacity: 0.2; */
+    left: 0.5em;
+}
+
+/* This is a little hacky, but fixes the artifacts in firefox */
+@-moz-document url-prefix() {
+    .vision__image img {
+        filter: none;
+    }
 }
 
 .vision__image svg {
     position: absolute;
+    justify-self: center;
     z-index: -1;
     width: 24em;
-    left: -4.6em;
     bottom: -4em;
 }
 
-/* .btn--fancy {} */
+.btn--fancy {
+    width: fit-content;
+    text-align: center;
+    right: 0;
+}
+
+.btn--fancy svg {
+    position: absolute;
+    left: -2em;
+}
+
+.btn--fancy svg path {
+    transition: 0.2s;
+}
+
+.btn--fancy:hover svg path {
+    fill: var(--clr-bronze-2);
+}
+
+@media screen and (min-width: 640px) {
+    .vision__quote {
+        font-size: 1.6em;
+    }
+
+    .vision__image img {
+        width: 18em;
+    }
+
+    .vision__image svg {
+        width: 28em;
+        bottom: -4.5em;
+        transform: translateX(-0.5em);
+        /* left: -1em; */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .vision__hero {
+        display: flex;
+        padding: 0 6em;
+    }
+
+    .vision__text {
+        text-align: left;
+        align-items: start;
+        justify-content: center;
+    }
+}

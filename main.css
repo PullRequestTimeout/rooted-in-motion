@@ -215,7 +215,8 @@ h3::selection {
 
 p::selection,
 ul::selection,
-li::selection {
+li::selection,
+q::selection {
     background-color: var(--clr-pine-3);
     color: #fff;
 }
