@@ -195,6 +195,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .client-symptoms__title {
@@ -241,12 +242,13 @@
     width: 9.5em;
 }
 
-.client-symptoms .client-symptoms__svg {
+.client-symptoms__svg {
     position: absolute;
     z-index: 0;
     bottom: 0;
     left: 2em;
-    height: 27em;
+    height: 20em;
+
 }
 
 .client-symptoms a {
@@ -261,6 +263,10 @@
     .client-symptoms__card:last-child {
         grid-column-start: 2;
     }
+
+    .client-symptoms__svg {
+        height: 22em;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -270,6 +276,10 @@
 
     .client-symptoms__card:last-child {
         grid-column-start: unset;
+    }
+
+    .client-symptoms__svg {
+        height: 25em;
     }
 }
 
@@ -425,3 +435,50 @@
         width: 8em;
     }
 }
+
+/*|| Vision -------------------------------------------------------------------------------------------------- */
+
+.vision__hero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.vision__hero a {
+    position: relative;
+
+}
+
+.vision__hero a svg {
+    position: absolute;
+    height: 4em;
+    z-index: -1;
+}
+
+.vision__text {
+    text-align: center;
+    color: var(--clr-black);
+}
+
+.vision__image {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.vision__image img {
+    width: 20em;
+    justify-self: center;
+    /* opacity: 0.2; */
+}
+
+.vision__image svg {
+    position: absolute;
+    z-index: -1;
+    width: 22em;
+    left: -2.5em;
+    bottom: -3em;
+}
+
+.btn--fancy {}
