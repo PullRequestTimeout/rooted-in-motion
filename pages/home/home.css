@@ -544,11 +544,13 @@
     .vision__hero {
         display: flex;
         padding: 0 6em;
+        justify-content: space-between;
     }
 
     .vision__text {
         text-align: left;
         align-items: start;
         justify-content: center;
+        max-width: 35em;
     }
 }
