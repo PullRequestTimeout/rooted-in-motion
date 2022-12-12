@@ -468,17 +468,18 @@
 }
 
 .vision__image img {
-    width: 20em;
+    width: 16em;
     justify-self: center;
+    filter: drop-shadow(1em 1em 1em var(--clr-pine-1));
     /* opacity: 0.2; */
 }
 
 .vision__image svg {
     position: absolute;
     z-index: -1;
-    width: 22em;
-    left: -2.5em;
-    bottom: -3em;
+    width: 24em;
+    left: -4.6em;
+    bottom: -4em;
 }
 
-.btn--fancy {}
+/* .btn--fancy {} */
