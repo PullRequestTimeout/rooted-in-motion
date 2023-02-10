@@ -177,17 +177,6 @@ img {
 
 /*|| Typography -------------------------------------------------------------------------------------- */
 
-/* .title {
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    margin: 0.5em;
-    text-align: center;
-}
-
-.title--white {
-    color: #fff;
-} */
-
 h2,
 h3,
 q {
@@ -228,6 +217,8 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+/* TODO: Make section padding responsive. Maybe reduce to 1 or 2em for mobile and tablet */
 
 section {
     padding: 4em 0;
