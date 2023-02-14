@@ -221,7 +221,7 @@ html {
 /* TODO: Make section padding responsive. Maybe reduce to 1 or 2em for mobile and tablet */
 
 section {
-    padding: 4em 0;
+    padding: 2em 0;
 }
 
 .section--greyscale {
