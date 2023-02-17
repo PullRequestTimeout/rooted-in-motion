@@ -501,21 +501,21 @@ for now and tweak it more when it's part of the larger file */
     align-self: end;
 }
 
-.feedbackcarousel__navigation {
+.feedback__carousel-navigation {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
 }
 
-.feedbackcarousel__navigation svg {
+.feedback__carousel-navigation svg {
     position: relative;
     width: 3em;
     height: auto;
     top: 0;
 }
 
-.feedbackcarousel__btn {
+.feedback__carousel-btn {
     border: none;
     background-color: transparent;
     display: flex;
@@ -528,37 +528,37 @@ for now and tweak it more when it's part of the larger file */
     transition: 0.2s;
 }
 
-.feedbackcarousel__btn--bronze {
+.feedback__carousel-btn--bronze {
     stroke: var(--clr-bronze-2);
 }
 
-.feedbackcarousel__btn:hover,
-.feedbackcarousel__btn:active {
+.feedback__carousel-btn:hover,
+.feedback__carousel-btn:active {
     opacity: 1;
 }
 
-.feedbackcarousel__btn:active {
+.feedback__carousel-btn:active {
     transform: scale(1.1);
     transition: 0.2s;
 }
 
-.feedbackcarousel__navigation>label {
+.feedback__carousel-navigation>label {
     user-select: none;
     margin: 0.5em;
     font-size: 2em;
 }
 
-.feedbackcarousel__navigation input[type="radio"] {
+.feedback__carousel-navigation input[type="radio"] {
     display: none;
 }
 
-.feedbackcarousel__navigation input[type="radio"] label {
+.feedback__carousel-navigation input[type="radio"] label {
     color: #fff;
     cursor: pointer;
 }
 
-.feedbackcarousel__navigation input[type="radio"]:checked+label,
-.feedbackcarousel__navigation input[type="radio"]:active+label {
+.feedback__carousel-navigation input[type="radio"]:checked+label,
+.feedback__carousel-navigation input[type="radio"]:active+label {
     opacity: 1;
 }
 
@@ -580,7 +580,7 @@ for now and tweak it more when it's part of the larger file */
         opacity: 0.3;
     }
 
-    .feedbackcarousel__navigation {
+    .feedback__carousel-navigation {
         margin: 0;
     }
 }
