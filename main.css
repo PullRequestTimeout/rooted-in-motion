@@ -590,40 +590,25 @@ for now and tweak it more when it's part of the larger file */
 
 .feedback-cta {
     margin: 1em;
+}
+
+.feedback-cta,
+.feedback-cta__text {
     display: flex;
     flex-direction: column;
     gap: 1em;
-
 }
 
-.feedback-cta>h3 {
+.feedback-cta__text>h3 {
     margin-top: 1em;
 }
 
-.feedback-cta>p {
+.feedback-cta__text>p {
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
     line-height: 1.6;
     z-index: 2;
-}
-
-.feedback-cta__image {
-    width: 100%;
-    position: relative;
-}
-
-.feedback-cta__image-shadow {
-    position: absolute;
-    background-color: var(--clr-bronze-4);
-    margin-top: 1em;
-    border-radius: 0.5em;
-    width: calc(100% - 1em);
-    height: 100%;
-    /* aspect-ratio: 4 / 3; */
-    top: 0;
-    left: 0;
-    z-index: 0;
 }
 
 .feedback-cta img {
@@ -632,7 +617,7 @@ for now and tweak it more when it's part of the larger file */
     width: calc(100% - 1em);
     z-index: 10;
     border-radius: 0.5em;
-    right: 0;
+    box-shadow: -1em 1em 0 var(--clr-bronze-4);
 }
 
 .feedback__plant-2 {
@@ -641,6 +626,58 @@ for now and tweak it more when it's part of the larger file */
     left: -6em;
     bottom: -3em;
     filter: drop-shadow(2px 2px 2px var(--clr-black));
+}
+
+@media screen and (min-width: 640px) {
+    .feedback-cta {
+        margin: 2em;
+    }
+
+    .feedback-cta img {
+        max-width: 30em;
+    }
+
+    .feedback__plant-2 {
+        left: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .feedback-cta {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feedback-cta picture {
+        justify-self: end;
+    }
+
+    .feedback-cta__text {
+        gap: 2em;
+    }
+
+    .feedback-cta__text>h3 {
+        margin-top: 0;
+    }
+
+    .feedback__plant-2 {
+        left: 60%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .feedback-cta {
+        margin: 2em 6em;
+    }
+
+    .feedback-cta picture {
+        justify-self: center;
+    }
+
+    .feedback__plant-2 {
+        left: 70%;
+    }
 }
 
 /*|| Utilities --------------------------------------------------------------------------------------- */
