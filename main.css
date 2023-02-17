@@ -217,6 +217,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 /* TODO: Make section padding responsive. Maybe reduce to 1 or 2em for mobile and tablet */
 
 section {
@@ -451,7 +456,7 @@ for now and tweak it more when it's part of the larger file */
 
 .feedback {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .feedback__title {
@@ -624,7 +629,7 @@ for now and tweak it more when it's part of the larger file */
     position: absolute;
     width: 19em;
     left: -6em;
-    bottom: -3em;
+    bottom: -2.6em;
     filter: drop-shadow(2px 2px 2px var(--clr-black));
 }
 
