@@ -441,30 +441,31 @@ for now and tweak it more when it's part of the larger file */
 
 /*|| Carousel Section ---------------------------------------------------------------------------------------- */
 
-.feedback-plant-1 {
+.feedback__plant-1 {
     position: absolute;
     width: 6em;
     right: 10%;
     top: 0;
 }
 
-.feedbackcarousel__section {
+.feedback {
     position: relative;
 }
 
-.feedbackcarousel__title {
+.feedback__title {
     font-size: 2em;
     color: #fff;
 }
 
-.feedbackcarousel {
-    max-width: 50%;
+.feedback__carousel {
+    /* max-width: 50%; */
     display: flex;
 }
 
-.feedbackcarousel__content {
+.feedback__carousel-content {
     position: relative;
     display: flex;
+    justify-content: center;
     gap: 0.5em;
     width: 100%;
     min-width: 10em;
@@ -472,27 +473,28 @@ for now and tweak it more when it's part of the larger file */
     height: 100%;
 }
 
-.feedbackcarousel__content>p {
+.feedback__carousel-content>p {
     color: #fff;
     font-family: 'Raleway', sans-serif;
+    max-width: 50%;
     font-size: 1.2em;
     line-height: 1.6;
     text-align: center;
 }
 
-.feedbackcarousel__quotation {
+.feedback__quotation {
     display: grid;
-    min-width: 2em;
+    /* width: 10%; */
     height: 100%;
 }
 
-.feedbackcarousel__quotation--left {
+.feedback__quotation--left {
     position: relative;
     align-self: start;
     justify-content: flex-start;
 }
 
-.feedbackcarousel__quotation--right {
+.feedback__quotation--right {
     position: relative;
     align-self: end;
 }
@@ -559,16 +561,20 @@ for now and tweak it more when it's part of the larger file */
 }
 
 @media screen and (max-width: 700px) {
-    .feedbackcarousel__content {
+    .feedback__carousel-content {
         font-size: 1em;
     }
 
-    .feedbackcarousel {
-        max-width: unset;
+    .feedback__carousel-content>p {
+        max-width: 85%;
+    }
+
+    .feedback__carousel {
+        /* max-width: unset; */
         margin: 1em;
     }
 
-    .feedback-plant-1 {
+    .feedback__plant-1 {
         opacity: 0.3;
     }
 
