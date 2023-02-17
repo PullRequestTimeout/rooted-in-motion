@@ -14,3 +14,6 @@
 10. Link contact form to getform.io endpoints and configure.
 11. Link 'discovery call' to contact page, but with a preselected subject field and maybe a short prefilled in text field. Add a promp asking if they like to edit further or just submit.
 
+## More specifics
+
+- On carousel nav button click, use event.clientY to determine mouse position, and then use that value to keep nav button at that height on the page

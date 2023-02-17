@@ -197,7 +197,6 @@ a::selection,
 h1::selection,
 h2::selection,
 h3::selection {
-    /* text-shadow: 3px 3px 3px var(--clr-bronze-2); */
     background-color: var(--clr-bronze-2);
     color: #fff;
 }
@@ -452,6 +451,7 @@ for now and tweak it more when it's part of the larger file */
 
 .feedback {
     position: relative;
+    overflow: hidden;
 }
 
 .feedback__title {
@@ -581,8 +581,66 @@ for now and tweak it more when it's part of the larger file */
     }
 
     .feedback__carousel-navigation {
-        margin: 0;
+        /* margin: 0; */
+        margin-bottom: 1em;
     }
+}
+
+/* Get the time and attention you deserve */
+
+.feedback-cta {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.feedback-cta>h3 {
+    margin-top: 1em;
+}
+
+.feedback-cta>p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    z-index: 2;
+}
+
+.feedback-cta__image {
+    width: 100%;
+    position: relative;
+}
+
+.feedback-cta__image-shadow {
+    position: absolute;
+    background-color: var(--clr-bronze-4);
+    margin-top: 1em;
+    border-radius: 0.5em;
+    width: calc(100% - 1em);
+    height: 100%;
+    /* aspect-ratio: 4 / 3; */
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.feedback-cta img {
+    position: relative;
+    margin-left: 1em;
+    width: calc(100% - 1em);
+    z-index: 10;
+    border-radius: 0.5em;
+    right: 0;
+}
+
+.feedback__plant-2 {
+    position: absolute;
+    width: 19em;
+    left: -6em;
+    bottom: -3em;
+    filter: drop-shadow(2px 2px 2px var(--clr-black));
 }
 
 /*|| Utilities --------------------------------------------------------------------------------------- */
