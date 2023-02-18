@@ -685,6 +685,85 @@ for now and tweak it more when it's part of the larger file */
     }
 }
 
+/*|| Footer ------------------------------------------------------------------------------------------ */
+
+footer {
+    background-color: var(--clr-footer);
+    padding: 4em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer__logo {
+    width: 12em;
+    margin-bottom: 1em;
+}
+
+footer a,
+footer p,
+footer h3 {
+    color: #fff;
+    line-height: 1.6;
+}
+
+footer h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.footer__credits a {
+    font-weight: 600;
+}
+
+
+.footer__credits,
+.footer__quick-links,
+.footer__bookings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__quick-links h3,
+.footer__bookings h3 {
+    grid-column: 1 / 3;
+    margin-bottom: 0.5em;
+}
+
+.footer__hero,
+.footer__socials,
+.footer__credits {
+    display: flex;
+}
+
+.footer__hero,
+.footer__credits {
+    flex-direction: column;
+}
+
+.footer__socials {
+    gap: 2em;
+}
+
+.footer__socials svg {
+    width: 2em;
+    fill: #fff;
+    transition: 0.3s;
+}
+
+.footer__socials svg:hover,
+.footer__socials svg:active {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 640px) {
+    footer {
+        padding: 4em 2em;
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
 /*|| Utilities --------------------------------------------------------------------------------------- */
 
 .btn {
