@@ -669,10 +669,10 @@
 }
 
 .faq__item>label {
-    margin: 0.5em 0;
     display: grid;
     grid-template-columns: 1fr auto;
     cursor: pointer;
+    padding: 0.5em 0;
 }
 
 .faq__question {
