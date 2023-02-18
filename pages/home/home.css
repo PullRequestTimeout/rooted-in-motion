@@ -687,6 +687,34 @@
     transition: max-height 0.3s ease-out;
 }
 
+.faq__plus-icon {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+
+.faq__plus-icon::after,
+.faq__plus-icon::before {
+    content: "";
+    width: 15px;
+    height: 3px;
+    background-color: var(--clr-pine-3);
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    top: 50%;
+    transition: 0.3s;
+    /* left: 50%; */
+}
+
+.faq__plus-icon::before {
+    transform: rotate(90deg);
+}
+
+.faq__plus-icon.active::before {
+    transform: rotate(0deg);
+}
+
 @media screen and (min-width: 640px) {
     .faq {
         margin: 2em;
