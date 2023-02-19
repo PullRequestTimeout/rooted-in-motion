@@ -658,8 +658,10 @@
     flex-direction: column;
 }
 
-.faq>hr {
+.faq hr {
     width: 100%;
+    border: none;
+    border-top: 2px solid var(--clr-pine-2);
 }
 
 .faq__title {
@@ -741,3 +743,15 @@
         margin: 2em 6em;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .faq {
+        margin: 2em 20em;
+    }
+}
+
+/* @media screen and (min-width: 1536px) {
+    .faq {
+        margin: 2em 10em;
+    }
+} */
