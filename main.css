@@ -204,7 +204,8 @@ h3::selection {
 p::selection,
 ul::selection,
 li::selection,
-q::selection {
+q::selection,
+span::selection {
     background-color: var(--clr-pine-3);
     color: #fff;
 }
@@ -239,11 +240,13 @@ section {
 /*||Navbar--------------------------------------------------------------------------------------------------------------*/
 
 header {
+    padding: 1em;
+    width: calc(100% - 2em);
+
     text-align: center;
     position: fixed;
     top: 0;
     z-index: 1000;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -258,7 +261,8 @@ header {
 
 .navbar__logo {
     display: block;
-    padding: 1em;
+    width: 15em;
+    /* padding: 1em; */
     user-select: none;
     transition: 0.2s ease;
 }
@@ -302,10 +306,6 @@ header nav ul {
     z-index: 999;
     gap: 3em;
 }
-
-/* header nav li {
-    padding: 1em 1em;
-} */
 
 .navbar__link-group {
     /* margin-bottom: 2em; */
@@ -363,15 +363,25 @@ header nav ul {
 }
 
 .navbar__hamburger {
-    margin-right: 1em;
+    /* margin-right: 1em; */
     font-size: 1.5rem;
     color: #000;
     cursor: pointer;
 }
 
+@media screen and (min-width: 640px) {
+    header {
+        padding: 1em 2em;
+        width: calc(100% - 4em);
+    }
+}
 
-/* 1100 seems to work well, but I'll keep it at 800 
-for now and tweak it more when it's part of the larger file */
+@media screen and (min-width: 768px) {
+    header {
+        padding: 1em 4em;
+        width: calc(100% - 8em);
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .navbar__hamburger {
@@ -379,22 +389,14 @@ for now and tweak it more when it's part of the larger file */
     }
 
     header {
-        position: fixed;
+        padding: 1em 6em;
+        width: calc(100% - 12em);
         display: flex;
-        /* justify-content: center; */
         text-align: unset;
-        /* padding: 0 2rem; */
     }
 
     .navbar__logo {
-        padding: 1em 0;
-        /* padding-right: 15vw; */
-        margin-left: 6em;
-    }
-
-    .navbar__logo,
-    header a {
-        width: fit-content;
+        width: 18em;
     }
 
     .navbar__checkbox:not(:checked)~nav {
@@ -406,23 +408,16 @@ for now and tweak it more when it's part of the larger file */
     }
 
     header nav ul {
-        /* margin: 0; */
-        margin-right: 6em;
         height: unset;
         display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    header nav li {
-        padding-left: 1em;
+        grid-template-columns: 1fr auto;
+        gap: 2em;
     }
 
     .navbar__link-group {
         display: flex;
         flex-direction: row;
         justify-self: end;
-        margin: 0;
-
     }
 
     .navbar__linebreak {
@@ -430,7 +425,7 @@ for now and tweak it more when it's part of the larger file */
     }
 
     .navbar__links {
-        margin: 0 1em;
+        margin: 0 0.75em;
         text-transform: unset;
         color: black;
         font-size: 1.2rem;
@@ -438,8 +433,21 @@ for now and tweak it more when it's part of the larger file */
 
     .btn--cta {
         justify-self: end;
-        /* padding-right: 6em; */
         min-width: 162px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        padding: 1em 8em;
+        width: calc(100% - 16em);
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    header {
+        padding: 1em 10em;
+        width: calc(100% - 20em);
     }
 }
 
@@ -689,7 +697,7 @@ for now and tweak it more when it's part of the larger file */
 
 footer {
     background-color: var(--clr-footer);
-    padding: 4em 1em;
+    padding: 2em 1em;
 }
 
 .footer__container {
@@ -799,8 +807,6 @@ footer h3 {
         gap: 2em;
         flex-direction: row;
     }
-
-
 }
 
 @media screen and (min-width: 1024px) {
