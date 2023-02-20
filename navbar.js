@@ -33,7 +33,7 @@ function changeNavStyle() {
 
 function closeNav() {
     document.getElementById("navCheckbox").checked = false
-    changeNavStyle()
+    // changeNavStyle()
 }
 
 function navbarOpacity() {
