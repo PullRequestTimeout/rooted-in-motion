@@ -726,12 +726,15 @@
     transform: translate(1em, -0.8em);
 }
 
-@media screen and (min-width: 768px) {}
-
 @media screen and (min-width: 1024px) {
+    .promise {
+        padding: 0 6em;
+    }
+
     .promise__values {
         flex-direction: row;
         justify-content: center;
+        margin: unset;
     }
 
     .promise__arrows {
@@ -743,6 +746,22 @@
         display: flex;
         justify-content: center;
         gap: 1em;
+    }
+
+    .promise__consultation p {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .promise {
+        padding: 0 8em;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .promise {
+        padding: 0 10em;
     }
 }
 
