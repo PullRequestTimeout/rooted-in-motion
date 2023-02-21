@@ -704,6 +704,11 @@
     .vision__hero {
         padding: 2em 10em;
     }
+
+    .btn--fancy {
+        transform: scale(1.2);
+        margin-left: 2em;
+    }
 }
 
 @media screen and (min-width: 1800px) {
@@ -719,11 +724,6 @@
         width: 32em;
         bottom: -5.5em;
         transform: translateX(-0.5em);
-    }
-
-    .btn--fancy {
-        transform: scale(1.2);
-        margin-left: 2em;
     }
 }
 

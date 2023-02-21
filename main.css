@@ -912,13 +912,12 @@ footer h3 {
 
 .btn--secondary:hover {
     color: var(--clr-pine-2);
-    background-color: var(--clr-pine-4);
 }
 
-/* 
-.btn:hover {
-    opacity: 1;
-} */
+.btn--secondary:hover,
+.btn--secondary:active {
+    background-color: var(--clr-pine-4);
+}
 
 .flex-center {
     display: flex;
