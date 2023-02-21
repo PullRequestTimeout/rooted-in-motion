@@ -1,5 +1,3 @@
-const vals = [1,2,3,4,5,6]
-
 function showFaq(event) {
     const faqCheckboxs = document.getElementsByName("faqCheckbox")
     
