@@ -563,7 +563,7 @@
     width: 16em;
     justify-self: center;
     filter: drop-shadow(1em 1em 1em var(--clr-pine-1));
-    /* left: 0.5em; */
+    transform: translateX(0.5em);
 }
 
 /* This is a little hacky, but fixes the artifacts in firefox */
@@ -579,7 +579,7 @@
     z-index: -1;
     width: 24em;
     bottom: -4em;
-    left: -5.5em;
+    /* transform: translateX(-1em); */
 }
 
 .btn--fancy {
