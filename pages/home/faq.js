@@ -1,27 +1,31 @@
-function showFaq() {
-    const faqRadios = document.getElementsByName("faqRadio")
+const vals = [1,2,3,4,5,6]
 
-    for (i = 0; i < faqRadios.length; i++) {
-        let matchingAnswer = document.getElementById(`faqAnswer${faqRadios[i].value}`)
-        let matchingIcon = document.getElementById(`faqIcon${faqRadios[i].value}`)
+function showFaq(event) {
+    const faqCheckboxs = document.getElementsByName("faqCheckbox")
+    
+    for (i = 0; i < faqCheckboxs.length; i++) {
+        let matchingAnswer = document.getElementById(`faqAnswer${faqCheckboxs[i].value}`)
+        let matchingIcon = document.getElementById(`faqIcon${faqCheckboxs[i].value}`)
+        let matchingRadio = document.getElementById(`faqCheckbox${faqCheckboxs[i].value}`)
 
-        if (faqRadios[i].checked){
+        if (faqCheckboxs[i].checked && event.target.value == faqCheckboxs[i].value){
             matchingAnswer.style.maxHeight = `${matchingAnswer.scrollHeight}px`
             matchingIcon.classList.add("active")
         } else {
             matchingAnswer.style.maxHeight = 0
             matchingIcon.classList.remove("active")
+            matchingRadio.checked = false
         }
     }
 }
 
-document.getElementsByName("faqRadio").forEach(radio => radio.addEventListener("input", showFaq))
+document.getElementsByName("faqCheckbox").forEach(radio => radio.addEventListener("input", showFaq))
 
 function clearRadios() {
-    const faqRadios = document.getElementsByName("faqRadio")
-    for (i = 0; i < faqRadios.length; i++) {
-        if (faqRadios[i].checked){
-            faqRadios[i].checked = false
+    const faqCheckboxs = document.getElementsByName("faqCheckbox")
+    for (i = 0; i < faqCheckboxs.length; i++) {
+        if (faqCheckboxs[i].checked){
+            faqCheckboxs[i].checked = false
         }
     }
 }
