@@ -17,3 +17,7 @@
 ## More specifics
 
 - On carousel nav button click, use event.clientY to determine mouse position, and then use that value to keep nav button at that height on the page
+- On scroll down, make nav slide up and disappear, on scroll up make nav reappear
+- Animate elements into view on scroll
+- Animate carousel
+- Make FAQ hideable
