@@ -849,6 +849,12 @@ footer h3 {
     z-index: 10;
 }
 
+.btn:active,
+.btn--secondary:active,
+.btn--primary:active {
+    transform: scale(0.95);
+}
+
 .btn--primary {
     background-color: var(--clr-pine-3);
     opacity: 1;
