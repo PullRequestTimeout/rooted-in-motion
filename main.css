@@ -451,9 +451,9 @@ header nav ul {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
     header {
-        padding: 2em 14em;
+        padding: 1em 14em;
         width: calc(100% - 27em);
     }
 
@@ -484,6 +484,7 @@ header nav ul {
 
 .feedback__carousel {
     display: flex;
+    margin: 0 1em;
 }
 
 .feedback__carousel-content {
@@ -601,7 +602,7 @@ header nav ul {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
     .feedback__title--lg-scrn {
         margin-top: 1em;
         font-size: 2.5em;
@@ -715,7 +716,7 @@ header nav ul {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
     .feedback-cta {
         margin: 4em 14em;
     }
@@ -863,7 +864,7 @@ footer h3 {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
     footer {
         padding: 4em 14em;
     }

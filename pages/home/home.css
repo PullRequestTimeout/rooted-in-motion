@@ -204,7 +204,7 @@
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
     .home-hero {
         padding: 4em 14em;
     }
@@ -561,7 +561,7 @@
     }
 }
 
-@media screen and (min-width: 1980px) {
+@media screen and (min-width: 1800px) {
     .benefits-section {
         padding: 3em 14em;
     }
@@ -706,7 +706,7 @@
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
     .vision__hero {
         padding: 3em 14em;
     }
@@ -841,12 +841,12 @@
     }
 
     .promise__values {
-        gap: unset;
+        /* gap: unset; */
         justify-content: space-between;
     }
 }
 
-@media screen and (min-width: 1980px) {
+@media screen and (min-width: 1800px) {
     .promise {
         padding: 1em 14em;
     }
