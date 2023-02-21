@@ -111,6 +111,10 @@
         grid-column-start: 1;
     }
 
+    .home-hero__text p {
+        font-size: 1.6em;
+    }
+
     .home-hero__title,
     .home-hero__text p {
         padding: 0;
@@ -559,7 +563,7 @@
     width: 16em;
     justify-self: center;
     filter: drop-shadow(1em 1em 1em var(--clr-pine-1));
-    left: 0.5em;
+    /* left: 0.5em; */
 }
 
 /* This is a little hacky, but fixes the artifacts in firefox */
@@ -575,6 +579,7 @@
     z-index: -1;
     width: 24em;
     bottom: -4em;
+    left: -5.5em;
 }
 
 .btn--fancy {
@@ -762,6 +767,11 @@
 @media screen and (min-width: 1536px) {
     .promise {
         padding: 0 10em;
+    }
+
+    .promise__values {
+        gap: unset;
+        justify-content: space-between;
     }
 }
 
