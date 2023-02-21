@@ -451,20 +451,18 @@ header nav ul {
     }
 }
 
-/*|| Carousel Section ---------------------------------------------------------------------------------------- */
-
-/* TODO: Fix media query format to match design system */
+/*|| Carousel Section -------------------------------------------------------------------------- */
 
 .feedback__plant-1 {
     position: absolute;
     width: 6em;
     right: 10%;
     top: 0;
+    opacity: 0.3;
 }
 
 .feedback {
     position: relative;
-    /* overflow: hidden; */
 }
 
 .feedback__title {
@@ -473,7 +471,6 @@ header nav ul {
 }
 
 .feedback__carousel {
-    /* max-width: 50%; */
     display: flex;
 }
 
@@ -491,15 +488,14 @@ header nav ul {
 .feedback__carousel-content>p {
     color: #fff;
     font-family: 'Raleway', sans-serif;
-    max-width: 50%;
-    font-size: 1.2em;
+    max-width: 85%;
+    font-size: 1em;
     line-height: 1.6;
     text-align: center;
 }
 
 .feedback__quotation {
     display: grid;
-    /* width: 10%; */
     height: 100%;
 }
 
@@ -557,7 +553,7 @@ header nav ul {
 
 .feedback__carousel-navigation>label {
     user-select: none;
-    margin: 0.5em;
+    padding: 0.5em;
     font-size: 2em;
 }
 
@@ -575,31 +571,31 @@ header nav ul {
     opacity: 1;
 }
 
-@media screen and (max-width: 700px) {
-    .feedback__carousel-content {
-        font-size: 1em;
-    }
-
+@media screen and (min-width: 640px) {
     .feedback__carousel-content>p {
-        max-width: 85%;
-    }
-
-    .feedback__carousel {
-        /* max-width: unset; */
-        margin: 1em;
-    }
-
-    .feedback__plant-1 {
-        opacity: 0.3;
-    }
-
-    .feedback__carousel-navigation {
-        /* margin: 0; */
-        margin-bottom: 1em;
+        max-width: 70%;
+        font-size: 1.2em;
     }
 }
 
-/* Get the time and attention you deserve */
+@media screen and (min-width: 768px) {
+    /* .feedback__title {
+        margin-top: 0.5em;
+    } */
+}
+
+@media screen and (min-width: 1280px) {
+    .feedback__plant-1 {
+        opacity: 1;
+    }
+
+    .feedback__carousel-content>p {
+        max-width: 55%;
+        font-size: 1.2em;
+    }
+}
+
+/*|| Feedback Call to Action ------------------------------------------------------------------- */
 
 .feedback-cta {
     margin: 1em;
@@ -655,19 +651,22 @@ header nav ul {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .feedback-cta {
-        display: grid;
-        gap: 2em;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .feedback-cta picture {
-        justify-self: end;
+        margin: 2em 4em;
     }
 
     .feedback-cta__text {
         gap: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .feedback-cta {
+        margin: 2em 6em;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
     }
 
     .feedback-cta__text>h3 {
@@ -681,15 +680,25 @@ header nav ul {
 
 @media screen and (min-width: 1280px) {
     .feedback-cta {
-        margin: 2em 6em;
+        margin: 2em 8em;
     }
 
-    .feedback-cta picture {
-        justify-self: center;
+    .feedback-cta img {
+        max-width: 35em;
+    }
+
+    .feedback-cta__text {
+        justify-content: space-around;
     }
 
     .feedback__plant-2 {
         left: 70%;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .feedback-cta {
+        margin: 2em 10em;
     }
 }
 
