@@ -451,6 +451,18 @@ header nav ul {
     }
 }
 
+@media screen and (min-width: 1920px) {
+    header {
+        padding: 2em 14em;
+        width: calc(100% - 27em);
+    }
+
+    .navbar__link-group {
+        gap: 4em;
+        margin-right: 4em;
+    }
+}
+
 /*|| Carousel Section -------------------------------------------------------------------------- */
 
 .feedback__plant-1 {
@@ -578,12 +590,6 @@ header nav ul {
     }
 }
 
-@media screen and (min-width: 768px) {
-    /* .feedback__title {
-        margin-top: 0.5em;
-    } */
-}
-
 @media screen and (min-width: 1280px) {
     .feedback__plant-1 {
         opacity: 1;
@@ -592,6 +598,13 @@ header nav ul {
     .feedback__carousel-content>p {
         max-width: 55%;
         font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .feedback__title--lg-scrn {
+        margin-top: 1em;
+        font-size: 2.5em;
     }
 }
 
@@ -699,6 +712,16 @@ header nav ul {
 @media screen and (min-width: 1536px) {
     .feedback-cta {
         margin: 2em 10em;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .feedback-cta {
+        margin: 4em 14em;
+    }
+
+    .feedback-cta img {
+        max-width: 40em;
     }
 }
 
@@ -837,6 +860,12 @@ footer h3 {
 @media screen and (min-width: 1536px) {
     footer {
         padding: 4em 10em;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    footer {
+        padding: 4em 14em;
     }
 }
 
