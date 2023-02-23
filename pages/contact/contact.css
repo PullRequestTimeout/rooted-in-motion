@@ -198,3 +198,17 @@
         padding: 2em 14em;
     }
 }
+
+/*|| Map -------------------------------------------------------------------------------------------------- */
+
+.map {
+    padding: unset;
+    background-color: var(--clr-bronze-4);
+    position: relative;
+    height: 25em;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
