@@ -798,9 +798,20 @@ footer h3 {
     transition: 0.3s;
 }
 
+.footer__credits a {
+    transition: 0.3s;
+}
+
+.footer__credits a:hover,
+.footer__credits a:active {
+    color: var(--clr-bronze-2);
+
+}
+
 .footer__socials svg:hover,
 .footer__socials svg:active {
     transform: scale(1.1);
+    fill: var(--clr-bronze-2);
 }
 
 @media screen and (min-width: 640px) {
