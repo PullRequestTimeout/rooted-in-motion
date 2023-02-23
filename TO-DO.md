@@ -21,3 +21,5 @@
 - Animate elements into view on scroll
 - Animate carousel
 - Make FAQ hideable
+
+- When Website is deployed, go to Google Cloud Platform and edit API key to restrict usage to rootedinmotion.ca domain, otherwise it could be used from other websites. However, this can't be changed until after deploying, as the request will not be accept from local domain.
