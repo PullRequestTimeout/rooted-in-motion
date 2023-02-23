@@ -897,6 +897,7 @@ footer h3 {
     border-radius: 0.5em;
     padding: 1em 2em;
     z-index: 10;
+    width: fit-content;
 }
 
 .btn:active,
