@@ -618,11 +618,11 @@
 }
 
 /* This is a little hacky, but fixes the artifacts in firefox */
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
     .vision__image img {
         filter: none;
     }
-}
+} */
 
 .vision__image svg {
     position: absolute;
