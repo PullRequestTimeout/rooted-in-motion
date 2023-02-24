@@ -618,6 +618,7 @@
 }
 
 /* This is a little hacky, but fixes the artifacts in firefox */
+/* Firefox seems to have fixed this bug while I was writing this site,but keep this here in case I need it later */
 /* @-moz-document url-prefix() {
     .vision__image img {
         filter: none;
@@ -630,7 +631,6 @@
     z-index: -1;
     width: 24em;
     bottom: -4em;
-    /* transform: translateX(-1em); */
 }
 
 .btn--fancy {
