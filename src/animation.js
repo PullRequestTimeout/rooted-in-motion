@@ -4,8 +4,8 @@ const fadeIn = document.querySelectorAll(".fade-in")
 
 const options = {
     root: null, //This specifies that it is the viewport that is intersecting. A root ancestor can be specified also.
-    threshhold: 0.5, //This is the percentage of the target element that is intersecting, expressed as a ratio.
-    rootMargin: "0px", //Works like CSS margin (but needs to be expressed in percentage or px, as a string).
+    threshhold: 1, //This is the percentage of the target element that is intersecting, expressed as a 0.0 to 1.0 == 0% to 100%.
+    rootMargin: "-80px", //Works like CSS margin (but needs to be expressed in percentage or px, as a string).
 }
 
 const observer = new IntersectionObserver(function(entries, observer){
@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(function(entries, observer){
         if (!entry.isIntersecting){
             return
         } else {
-            // entry.target.classList.add("fade-animation")
+            entry.target.classList.add("fade-animation")
             console.log(entry.target)
             
             // entry.target.classList.toggle("fade-animation")
