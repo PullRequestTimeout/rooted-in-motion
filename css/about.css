@@ -27,8 +27,8 @@
 
 .about-hero__chalk {
     position: absolute;
-    width: 5em;
-    transform: translate(-0.25rem, 0.8rem)
+    width: 4.5em;
+    transform: translate(-3rem, 0.8rem)
 }
 
 .about-hero__image {
