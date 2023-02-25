@@ -487,6 +487,7 @@ header nav ul {
 .feedback__title {
     font-size: 2em;
     color: #fff;
+    margin-top: 2rem;
 }
 
 .feedback__carousel {
@@ -701,7 +702,7 @@ header nav ul {
 
 @media screen and (min-width: 1280px) {
     .feedback-cta {
-        margin: 2em 8em;
+        margin: 3em 8em;
     }
 
     .feedback-cta img {
@@ -804,14 +805,13 @@ footer h3 {
     transition: 0.3s;
 }
 
-.footer__credits a {
+footer a {
     transition: 0.3s;
 }
 
-.footer__credits a:hover,
-.footer__credits a:active {
+footer a:hover,
+footer a:active {
     color: var(--clr-bronze-2);
-
 }
 
 .footer__socials svg:hover,
