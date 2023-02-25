@@ -15,7 +15,7 @@ function changeNavStyle() {
     if (navCheckbox.checked == true) {
         header.style.backgroundColor = "#1D201D"
         nav.style.backgroundColor = "#1D201D"
-        navHamburger.style.color = "#ffffff"
+        navHamburger.style.fill = "#ffffff"
         logo1.style.fill = "#ffffff"
         logo4.style.fill = "#ffffff"
         logo2.style.fill = "#E59C42"
@@ -23,7 +23,7 @@ function changeNavStyle() {
     } else {
         header.style.backgroundColor = ""
         nav.style.backgroundColor = ""
-        navHamburger.style.color = "#000000"
+        navHamburger.style.fill = "#000000"
         logo1.style.fill = "#212C21"
         logo2.style.fill = "#527A52"
         logo4.style.fill = "#212C21"
