@@ -1,5 +1,6 @@
 document.getElementById("navCheckbox").addEventListener("input", changeNavStyle)
 window.addEventListener("scroll", navbarOpacity)
+document.getElementById("servicesLink").addEventListener("click", () => {closeNav(); changeNavStyle();})
 document.body.onload = closeNav()
 
 function changeNavStyle() {
