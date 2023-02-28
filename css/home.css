@@ -259,6 +259,11 @@
     overflow-x: hidden;
 }
 
+#clientSymptoms {
+    position: absolute;
+    top: -5em;
+}
+
 .client-symptoms__title {
     color: #fff;
     font-size: 2em;
