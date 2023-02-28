@@ -287,6 +287,7 @@
 
 .client-symptoms__card:hover {
     background-color: var(--clr-bronze-2);
+    box-shadow: 0 0 1em var(--clr-bronze-2);
 }
 
 /* .client-symptoms__card:hover svg {
