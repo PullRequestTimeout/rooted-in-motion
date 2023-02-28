@@ -273,7 +273,7 @@
     z-index: 100;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4em 5em;
+    gap: 5em;
 }
 
 .client-symptoms__card {
@@ -362,7 +362,7 @@
 }
 
 .benefits-section__title {
-    font-size: 1.6em;
+    font-size: 2em;
     position: relative;
     z-index: 10;
 }
@@ -436,10 +436,6 @@
     .benefits-section__text {
         text-align: center;
         margin: 0 2em
-    }
-
-    .benefits-section__title {
-        font-size: 2em
     }
 
     .benefits-section__text ul {
@@ -756,10 +752,12 @@
 
 .promise__values>div {
     max-width: 20em;
+    /* min-height: 7em; */
     background-color: var(--clr-pine-2);
     padding: 2em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1em;
     border-radius: 0.5em;
 }
@@ -770,8 +768,13 @@
     text-align: center;
 }
 
+.promise__values p {
+    font-size: 1em;
+    line-height: 1.2;
+}
+
 .promise__values h3 {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .promise__consultation {
