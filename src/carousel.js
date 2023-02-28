@@ -91,3 +91,4 @@ const changeRadioLeft = () => {
 document.getElementById('feedbackCarouselNavLeft').addEventListener("click", changeRadioLeft);
 document.getElementById('feedbackCarouselNavRight').addEventListener("click", changeRadioRight);
 
+document.getElementById("feedbackCarouselNav0").checked = true
