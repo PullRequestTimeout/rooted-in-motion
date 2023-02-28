@@ -14,7 +14,6 @@ const observer = new IntersectionObserver(function(entries, observer){
             return
         } else {
             entry.target.classList.add("fade-animation")
-            console.log(entry.target)
             
             // entry.target.classList.toggle("fade-animation")
             // Try toggling the animation every time the images enter into the page, might be annoying, 
