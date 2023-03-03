@@ -888,6 +888,100 @@ footer a:active {
     }
 }
 
+/*|| Modal --------------------------------------------------------------------------------------- */
+
+.modal__background {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 100vh;
+    width: calc(100vw - 2rem);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(0.1em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.modal__popup {
+    position: relative;
+    border-radius: 0.5em;
+    padding: 1em;
+    background-color: var(--clr-bronze-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    max-height: 80vh;
+    min-height: 20%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.modal__popup button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__popup h2 {
+    font-size: 1.6em;
+}
+
+.modal__popup p {
+    line-height: 1.3;
+}
+
+.modal__close {
+    height: inherit;
+    width: inherit;
+    position: fixed;
+}
+
+.modal__close::after,
+.modal__close::before {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-pine-3);
+    top: -0.5rem;
+    right: 0;
+    width: 1.5rem;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.2s;
+
+}
+
+.modal__close::after {
+    transform: rotate(45deg);
+}
+
+.modal__close::before {
+    transform: rotate(-45deg);
+}
+
+.modal__popup button:hover .modal__close::after,
+.modal__popup button:hover .modal__close::before,
+.modal__popup button:active .modal__close::after,
+.modal__popup button:active .modal__close::before {
+    background-color: var(--clr-bronze-2);
+}
+
+.modal__popup button:active .modal__close::after {
+    transform: rotate(45deg) scale(1.4);
+}
+
+.modal__popup button:active .modal__close::before {
+    transform: rotate(-45deg) scale(1.4);
+}
+
 /*|| Utilities --------------------------------------------------------------------------------------- */
 
 .btn {
