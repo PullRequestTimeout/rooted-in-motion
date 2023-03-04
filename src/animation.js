@@ -1,4 +1,4 @@
-//|| IntersectionObserver ----------------------------------------------------------------------------------------------------------------
+// IntersectionObserver ----------------------------------------------------------------------------------------------------------------
 
 const fadeIn = document.querySelectorAll(".fade-in")
 
@@ -27,3 +27,29 @@ const observer = new IntersectionObserver(function(entries, observer){
 fadeIn.forEach(fade => {
     observer.observe(fade)
 })
+
+// Modal ----------------------------------------------------------------------------------------------------------------
+
+// Pass in null to title arg if no title is needed
+function showModal(title, content) {
+    const modal = document.getElementById("modal")
+    const modalTitle = document.getElementById("modalTitle")
+    const modalContent = document.getElementById("modalContent")
+    modal.classList.remove("hide")
+    if (title) {
+        modalTitle.innerText = title
+        modalTitle.classList.remove("hide")
+    }
+    if (content) {
+        modalContent.innerText = content
+        modalContent.classList.remove("hide")
+    }
+}
+
+function hideModal() {
+    document.getElementById("modal").classList.add("hide")
+    document.getElementById("modalTitle").classList.add("hide")
+    document.getElementById("modalContent").classList.add("hide")
+}
+
+document.getElementById("modalClose").addEventListener("click", hideModal)
