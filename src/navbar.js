@@ -1,7 +1,12 @@
 document.getElementById("navCheckbox").addEventListener("input", changeNavStyle)
 window.addEventListener("scroll", navbarOpacity)
-document.getElementById("servicesLink").addEventListener("click", () => {closeNav(); changeNavStyle();})
 document.body.onload = closeNav()
+
+if (!document.getElementById("servicesLink")) {
+    console.log("null")
+} else {
+    document.getElementById("servicesLink").addEventListener("click", () => {closeNav(); changeNavStyle();})
+}
 
 function changeNavStyle() {
     const header = document.querySelector("header")
