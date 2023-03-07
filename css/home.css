@@ -288,6 +288,10 @@
     background-color: var(--clr-bronze-5);
     border-radius: 0.5em;
     transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .client-symptoms__card:hover {
@@ -295,18 +299,38 @@
     box-shadow: 0 0 1em var(--clr-bronze-2);
 }
 
-/* .client-symptoms__card:hover svg {
+.client-symptoms__card svg {
+    fill: var(--clr-bronze-2);
+    margin: 0.75rem;
+    transition: 0.2s;
+}
+
+.client-symptoms__card:hover svg {
     fill: #fff;
+}
+
+.client-symptoms__card:nth-child(5) svg,
+.client-symptoms__card:nth-child(6) svg,
+.client-symptoms__card:nth-child(9) svg,
+.client-symptoms__card:nth-child(10) svg {
+    fill: none;
+    stroke: var(--clr-bronze-2);
+}
+
+.client-symptoms__card:nth-child(5):hover svg,
+.client-symptoms__card:nth-child(6):hover svg,
+.client-symptoms__card:nth-child(9):hover svg,
+.client-symptoms__card:nth-child(10):hover svg {
     stroke: #fff;
-} */
+}
 
 .client-symptoms__card p {
-    position: relative;
+    position: absolute;
     color: #fff;
-    top: 6em;
+    bottom: -3em;
     text-align: center;
-    transform: translateX(-25%);
-    width: 9.5em;
+    /* transform: translateX(-25%); */
+    width: 10rem;
 }
 
 .client-symptoms__svg {
