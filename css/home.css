@@ -301,11 +301,32 @@
 
 .client-symptoms__card svg {
     fill: var(--clr-bronze-2);
+    height: 75%;
     margin: 0.75rem;
     transition: 0.2s;
 }
 
 .client-symptoms__card:hover svg {
+    fill: #fff;
+}
+
+.client-symptoms__card:nth-child(1) svg {
+    transform: translate(0.2rem, -0.2rem);
+    height: 85%;
+}
+
+.client-symptoms__card:nth-child(7) svg {
+    transform: translateY(0.1rem);
+    height: 85%;
+}
+
+.client-symptoms__card:nth-child(3) svg {
+    stroke: var(--clr-bronze-2);
+    fill: var(--clr-bronze-2);
+}
+
+.client-symptoms__card:nth-child(3):hover svg {
+    stroke: #fff;
     fill: #fff;
 }
 
@@ -327,10 +348,9 @@
 .client-symptoms__card p {
     position: absolute;
     color: #fff;
-    bottom: -3em;
+    top: 5.5rem;
     text-align: center;
-    /* transform: translateX(-25%); */
-    width: 10rem;
+    width: 8rem;
 }
 
 .client-symptoms__svg {
