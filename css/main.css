@@ -752,6 +752,10 @@ footer {
     margin-bottom: 1em;
 }
 
+#privacyPolicy {
+    cursor: pointer;
+}
+
 footer a,
 footer p,
 footer h3 {
@@ -907,7 +911,7 @@ footer a:active {
 .modal__popup {
     position: relative;
     border-radius: 0.5em;
-    padding: 1em;
+    padding: 2em 1em;
     background-color: var(--clr-bronze-5);
     display: flex;
     flex-direction: column;
@@ -984,9 +988,22 @@ footer a:active {
 }
 
 @media screen and (min-width: 640px) {
+    .modal__popup {
+        gap: 2em;
+    }
+
+    .modal__popup button {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
     .modal__background {
         width: calc(100vw - 4rem);
         padding: 0 2em;
+    }
+
+    .modal__popup {
+        padding: 2em;
     }
 }
 
@@ -994,6 +1011,10 @@ footer a:active {
     .modal__background {
         width: calc(100vw - 8rem);
         padding: 0 4em;
+    }
+
+    .modal__popup {
+        padding: 2em 4em;
     }
 }
 
@@ -1006,7 +1027,7 @@ footer a:active {
 
 @media screen and (min-width: 1280px) {
     .modal__popup {
-        max-width: 75%;
+        max-width: 65%;
     }
 }
 
@@ -1050,12 +1071,9 @@ footer a:active {
     transition: 0.2s;
 }
 
-.btn--secondary:hover {
-    color: var(--clr-pine-2);
-}
-
 .btn--secondary:hover,
 .btn--secondary:active {
+    color: var(--clr-pine-2);
     background-color: var(--clr-pine-4);
 }
 
