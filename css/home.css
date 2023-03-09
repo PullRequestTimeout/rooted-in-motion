@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr;
     background: linear-gradient(#F6E8D5, #EDD1AB);
+    gap: 1em;
 }
 
 .home-hero__text {
@@ -42,7 +43,6 @@
 
 .home-hero__image picture img {
     filter: drop-shadow(0px 0px 1em var(--clr-bronze-2));
-    z-index: 1;
     width: 15em;
 }
 
@@ -76,6 +76,7 @@
 @media screen and (min-width: 640px) {
     .home-hero {
         padding: 2em 4em;
+        gap: 2em;
     }
 
     .home-hero__text {
@@ -85,7 +86,7 @@
     }
 
     .home-hero__image {
-        margin-top: 1.5em;
+        /* margin-top: 2em; */
         width: unset;
     }
 }
@@ -365,10 +366,14 @@
 }
 
 .client-symptoms a {
-    margin-top: 4em;
+    margin-top: 2em;
 }
 
 @media screen and (min-width: 640px) {
+    .client-symptoms {
+        gap: 3em;
+    }
+
     .client-symptoms__grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 5em;
@@ -380,6 +385,12 @@
 
     .client-symptoms__svg {
         height: 22em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .client-symptoms {
+        padding: 3em 0;
     }
 }
 
@@ -486,6 +497,10 @@
 }
 
 @media screen and (min-width: 640px) {
+    .benefits-section {
+        gap: 1rem;
+    }
+
     .benefits-section__text {
         text-align: center;
         margin: 0 2em

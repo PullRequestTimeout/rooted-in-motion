@@ -382,12 +382,20 @@ header nav ul {
         padding: 1em 2em;
         width: calc(100% - 4em);
     }
+
+    .navbar__linebreak {
+        width: 10rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
     header {
         padding: 1em 4em;
         width: calc(100% - 8em);
+    }
+
+    .navbar__linebreak {
+        width: 12rem;
     }
 }
 
