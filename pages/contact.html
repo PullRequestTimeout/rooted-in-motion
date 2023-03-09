@@ -130,8 +130,8 @@
             </div>
         </section>
         <section class="form">
-            <!-- action needs to be attached to getform.io -->
-            <form action="https://getform.io/f/ce024891-ecba-493c-a211-5a74cd48f845" method="POST" name="contactForm">
+            <form action="https://getform.io/f/ce024891-ecba-493c-a211-5a74cd48f845" method="POST" name="contactForm"
+                id="contactForm">
                 <div class="form__item fade-in">
                     <label for="contactFormName">Full Name<span>*</span></label>
                     <input type="text" name="name" id="contactFormName" autocomplete="name" required>
@@ -152,7 +152,7 @@
                     <label for="contactFormMessage">Message</label>
                     <textarea name="message" id="contactFormMessage" maxlength="500"></textarea>
                 </div>
-                <button class="btn btn--primary" type="submit">Get in touch</button>
+                <button class="btn btn--primary" type="submit" id="contactFormSubmit">Get in touch</button>
             </form>
         </section>
         <section class="map">
@@ -230,6 +230,7 @@
 
     </footer>
 
+    <script src="/src/contact.js"></script>
     <script src="/src/navbar.js"></script>
     <script src="/src/animation.js"></script>
 </body>
