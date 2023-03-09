@@ -150,12 +150,16 @@ document.querySelectorAll(".client-symptoms__card").forEach(card => card.addEven
 // Carousel ---------------------------------------------------------------------------------------
 
 // Always starts carousel on first slide
-document.getElementById("feedbackCarouselNav0").checked = true
+if(document.getElementById("feedbackCarouselNav0")) {
+    document.getElementById("feedbackCarouselNav0").checked = true
+}
 
 // Carousel navs
-document.getElementsByName("carouselNavDots").forEach(element => element.addEventListener("input", updateSlide));
-document.getElementById('feedbackCarouselNavLeft').addEventListener("click", changeRadioLeft)
-document.getElementById('feedbackCarouselNavRight').addEventListener("click", changeRadioRight)
+if (document.getElementById("feedbackCarousel")) {
+    document.getElementsByName("carouselNavDots").forEach(element => element.addEventListener("input", updateSlide));
+    document.getElementById('feedbackCarouselNavLeft').addEventListener("click", changeRadioLeft)
+    document.getElementById('feedbackCarouselNavRight').addEventListener("click", changeRadioRight)    
+}
 
 // Can be commented in to start an auto interval on carousel
 // document.body.onload = changeRadioRight(), setInterval(changeRadioRight, 10000)
@@ -240,26 +244,22 @@ function clearRadios() {
 
 // Consultation Booking ---------------------------------------------------------------------------
 
+
+// setTimeout in this just prevent the code from runnning until the inputConsult has time to register the new domain
+if (document.getElementById("bookConsult")) {
+    document.getElementById("bookConsult").addEventListener("click", () => {setTimeout(inputConsult, 100)})
+}
+
 document.body.onload = inputConsult()
-document.getElementById("footerConsult").addEventListener("click", bookConsult)
-
-// Only attaches event listener if the button exists
-if (document.getElementById("ctaConsult")) {
-    document.getElementById("ctaConsult").addEventListener("click", bookConsult)
-}
-
-function bookConsult() {
-    localStorage.setItem("consult", "true")
-}
 
 function inputConsult() {
     const contactFormSubject = document.getElementById("contactFormSubject")
     const contactFormMessage = document.getElementById("contactFormMessage")
     const contactFormName = document.getElementById("contactFormName")
-    if (window.location.href.includes("pages/contact.html") && localStorage.getItem("consult") == "true") {
+    if (window.location.href.includes("/pages/contact.html#consult")) {
+        console.log("true")
         contactFormSubject.value = "Consultation"
         contactFormMessage.innerText = "Hi Michelle! I'd love to organise a time with you for a consultation call."
         contactFormName.focus()
-        localStorage.removeItem("consult")
     }
 }
