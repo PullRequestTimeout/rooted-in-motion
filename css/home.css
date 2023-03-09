@@ -467,7 +467,6 @@
     justify-self: center;
     border-radius: 0.5em;
     filter: drop-shadow(0 0 0.5em var(--clr-black));
-
 }
 
 .benefits-section__image-shadow {
@@ -680,13 +679,32 @@
     transform: translateX(0.5em);
 }
 
-/* This is a little hacky, but fixes the artifacts in firefox */
-/* Firefox seems to have fixed this bug while I was writing this site,but keep this here in case I need it later */
-/* @-moz-document url-prefix() {
-    .vision__image img {
-        filter: none;
+/* This is a little hacky, but fixes the filter artifacts in firefox and safari */
+@-moz-document url-prefix() {
+    @media screen and (max-width: 768px) {
+        .vision__image img {
+            filter: none;
+        }
+
+        .benefits-section__image img {
+            filter: none;
+            box-shadow: 0 0 1em var(--clr-pine-1);
+        }
     }
-} */
+}
+
+@-webkit-document url-prefix() {
+    @media screen and (max-width: 768px) {
+        .vision__image img {
+            filter: none;
+        }
+
+        .benefits-section__image img {
+            filter: none;
+            box-shadow: 0 0 1em var(--clr-pine-1);
+        }
+    }
+}
 
 .vision__image svg {
     position: absolute;
@@ -1067,9 +1085,3 @@
         margin: 2em 20em;
     }
 }
-
-/* @media screen and (min-width: 1536px) {
-    .faq {
-        margin: 2em 10em;
-    }
-} */
