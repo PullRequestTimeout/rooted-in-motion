@@ -3,9 +3,6 @@ document.getElementById("footerConsult").addEventListener("click", bookConsult)
 if (document.getElementById("ctaConsult")) {
     document.getElementById("ctaConsult").addEventListener("click", bookConsult)
 }
-// if (document.getElementById("contactFormSubmit")) {
-//     document.getElementById("contactFormSubmit").addEventListener("click", clearConsult)
-// }
 
 function bookConsult() {
     localStorage.setItem("consult", "true")
@@ -22,10 +19,3 @@ function inputConsult() {
         localStorage.removeItem("consult")
     }
 }
-
-// function clearConsult() {
-//     const contactForm = document.getElementById("contactForm")
-//     if (localStorage.getItem("consult") && contactForm.checkValidity() === true) {
-//         localStorage.removeItem("consult")
-//     }
-// }
