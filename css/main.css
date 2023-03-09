@@ -1160,10 +1160,6 @@ footer a:active {
     animation: fadeIn forwards 0.25s ease-out;
 }
 
-/* .client-symptoms__grid .fade-in.fade-animation {
-    animation: fadeIn forwards 1s ease-out;
-} */
-
 .fade-in.fade-animation:nth-child(1) {
     animation-delay: 50ms;
 }
