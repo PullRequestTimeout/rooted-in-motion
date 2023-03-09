@@ -252,7 +252,8 @@ if ('scrollRestoration' in history) {
 if (document.getElementById("bookConsult")) {
     document.getElementById("bookConsult").addEventListener("click", () => {
         setTimeout(inputConsult, 100)
-        setTimeout(() => document.body.scrollTop = document.documentElement.scrollTop = 0, 100)
+        let offset = document.querySelector(".info").offsetHeight
+        setTimeout(() => {document.body.scrollTop = document.documentElement.scrollTop = offset}, 100)
     })
 }
 
