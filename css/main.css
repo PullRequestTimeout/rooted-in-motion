@@ -906,6 +906,49 @@ footer a:active {
     }
 }
 
+/*|| Privacy Policy ------------------------------------------------------------------------------ */
+
+.privacy-policy {
+    margin-top: 6rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+    .privacy-policy {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .privacy-policy {
+        padding: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .privacy-policy {
+        padding: 4rem 6rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .privacy-policy {
+        padding: 4rem 8rem;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .privacy-policy {
+        padding: 4rem 10rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .privacy-policy {
+        padding: 4em 14em;
+    }
+}
+
 /*|| Modal --------------------------------------------------------------------------------------- */
 
 .modal__background {
