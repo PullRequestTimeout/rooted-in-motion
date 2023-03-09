@@ -244,10 +244,16 @@ function clearRadios() {
 
 // Consultation Booking ---------------------------------------------------------------------------
 
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
 
 // setTimeout in this just prevents the code from runnning until the inputConsult has time to register the new domain
 if (document.getElementById("bookConsult")) {
-    document.getElementById("bookConsult").addEventListener("click", () => {setTimeout(inputConsult, 100)})
+    document.getElementById("bookConsult").addEventListener("click", () => {
+        setTimeout(inputConsult, 100)
+        setTimeout(() => document.body.scrollTop = document.documentElement.scrollTop = 0, 100)
+    })
 }
 
 document.body.onload = inputConsult()
