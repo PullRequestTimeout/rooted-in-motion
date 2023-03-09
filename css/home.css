@@ -820,6 +820,7 @@
 
 .promise__values>div {
     max-width: 20em;
+    min-width: 20em;
     /* min-height: 7em; */
     background-color: var(--clr-pine-2);
     padding: 2em;
@@ -878,8 +879,13 @@
 
     .promise__values {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         margin: unset;
+    }
+
+    .promise__values>div:first-child {
+        margin: 0 50%;
     }
 
     .promise__arrows {
@@ -902,15 +908,26 @@
     .promise {
         padding: 0 8em;
     }
+
+    .promise__values {
+        flex-wrap: unset;
+        /* justify-content: space-between; */
+    }
+
+    .promise__values>div:first-child {
+        margin: unset;
+    }
+
 }
 
 @media screen and (min-width: 1536px) {
     .promise {
         padding: 0 10em;
     }
+}
 
+@media screen and (min-width: 1445px) {
     .promise__values {
-        /* gap: unset; */
         justify-content: space-between;
     }
 }
