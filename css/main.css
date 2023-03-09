@@ -499,6 +499,10 @@ header nav ul {
     margin-top: 2rem;
 }
 
+.feedback__title--lg-scrn {
+    margin-bottom: 1rem;
+}
+
 .feedback__carousel {
     display: flex;
     margin: 0 1em;
