@@ -640,11 +640,11 @@ header nav ul {
 .feedback-cta__text {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2rem;
 }
 
 .feedback-cta__text>h3 {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .feedback-cta__text>p {
