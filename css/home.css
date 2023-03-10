@@ -16,6 +16,10 @@
     margin-bottom: 1em;
 }
 
+.home-hero__title span {
+    position: relative;
+}
+
 .home-hero__title {
     font-size: 2.5em;
     font-weight: 300;
@@ -25,8 +29,10 @@
 
 .home-hero__chalk {
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: -1;
-    max-width: 4.25em;
+    width: 105%;
     transform: translate(-0.1em, -0.2em);
 }
 
