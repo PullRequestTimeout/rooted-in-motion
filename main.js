@@ -5,7 +5,13 @@ window.addEventListener("scroll", navbarOpacity)
 document.body.onload = closeNav()
 if (document.getElementById("servicesLink")) {
     document.getElementById("servicesLink").addEventListener("click", () => {closeNav(); changeNavStyle();})  
-} 
+}
+document.querySelector("main").addEventListener("click", () => {
+    if (document.getElementById("navCheckbox").checked == true) {
+        closeNav()
+        changeNavStyle()
+    }
+})
 
 function changeNavStyle() {
     const header = document.querySelector("header")
