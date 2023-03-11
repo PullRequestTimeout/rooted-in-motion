@@ -1,3 +1,6 @@
+//     Welcome!!  >(.)__
+//                 (___/ Roast my code, I need to learn.
+//                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ @PullRequestTimeout
 // Navbar -----------------------------------------------------------------------------------------
 
 document.getElementById("navCheckbox").addEventListener("input", changeNavStyle)
