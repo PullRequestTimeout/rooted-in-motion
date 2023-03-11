@@ -258,8 +258,6 @@ if ('scrollRestoration' in history) {
 if (document.getElementById("bookConsult")) {
     document.getElementById("bookConsult").addEventListener("click", () => {
         setTimeout(inputConsult, 100)
-        let offset = document.querySelector(".info").offsetHeight
-        setTimeout(() => {document.body.scrollTop = document.documentElement.scrollTop = offset}, 100)
     })
 }
 
@@ -274,5 +272,7 @@ function inputConsult() {
         contactFormSubject.value = "Consultation"
         contactFormMessage.innerText = "Hi Michelle! I'd love to organise a time with you for a consultation call."
         contactFormName.focus()
+        let offset = document.querySelector(".info").offsetHeight
+        setTimeout(() => {document.body.scrollTop = document.documentElement.scrollTop = offset}, 100)
     }
 }
