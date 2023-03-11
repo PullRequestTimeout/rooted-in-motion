@@ -64,8 +64,8 @@ function navbarOpacity() {
 
 const intersectionObserverOptions = {
     root: null, //This specifies that it is the viewport that is intersecting. A root ancestor can be specified also.
-    threshhold: 0.75, //This is the percentage of the target element that is intersecting, expressed as a 0.0 to 1.0 == 0% to 100%.
-    rootMargin: "-25px", //Works like CSS margin (but needs to be expressed in percentage or px, as a string).
+    threshhold: 0.2, //This is the percentage of the target element that is intersecting, expressed as a 0.0 to 1.0 == 0% to 100%.
+    rootMargin: "0", //Works like CSS margin (but needs to be expressed in percentage or px, as a string).
 }
 
 const observer = new IntersectionObserver(entries => {

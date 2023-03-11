@@ -1157,7 +1157,7 @@ footer a:active {
 }
 
 .fade-in.fade-animation {
-    animation: fadeIn forwards 0.25s ease-out;
+    animation: fadeIn forwards 0.15s ease-out;
 }
 
 .fade-in.fade-animation:nth-child(1) {
