@@ -1,6 +1,6 @@
 # Rooted in Motion Manual Therapy Landing Page
 
-A landing page website for a manual therapy small business in Rossland, BC. Built with vanilla CSS and JS for animation and interactivity. Linking to JaneApp for booking functionality to maintain seperation from confidential client information, outsourcing contact form to [getform.io](https://getform.io/), and making use of the Google Maps Embed API.  Work includes photograpy/editing, development and deployment. Web Design in collaboration with [Sean Makura](https://seanmakura.webflow.io/).
+A landing page website for a manual therapy small business in Rossland, BC. Built with vanilla CSS and JS for animation and interactivity. Linking to JaneApp for booking functionality to maintain seperation from confidential client information, outsourcing contact form to [getform.io](https://getform.io/), making use of the Google Maps Embed API, and tracking usage with Google Analytics to ensure high performance through data driven development.  Work includes photograpy/editing, development, and deployment. Web Design in collaboration with [Sean Makura](https://seanmakura.webflow.io/).
 
 ## Project Requirements
 
@@ -9,5 +9,5 @@ A landing page website for a manual therapy small business in Rossland, BC. Buil
 
 ## What I've Learnt
 
-- Building this prject for an existing business, and working with someone else on the design gave me a great experience working with a team to meet specific requirements.
+- Building this project for an existing business, and working with a designer gave me great experience working within a team setting to meet specific requirements and deliver a real-world business solution to help grow an existing company.
 - All components were written from the ground up without using tutorials to hone some skills, especially with JS. While this is good for practice, it's probably better to use a library in the future just to speed up the developement time.
