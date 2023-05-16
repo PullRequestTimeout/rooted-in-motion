@@ -1123,7 +1123,8 @@ footer a:active {
 }
 
 .btn--primary:hover {
-    background-color: var(--clr-bronze-2)
+    background-color: var(--clr-bronze-2);
+    box-shadow: 0 0 1em var(--clr-bronze-1);
 }
 
 .btn--secondary {
@@ -1136,6 +1137,7 @@ footer a:active {
 .btn--secondary:active {
     color: var(--clr-pine-2);
     background-color: var(--clr-pine-4);
+    box-shadow: 0 0 1em var(--clr-pine-5);
 }
 
 .flex-center {
@@ -1157,7 +1159,7 @@ footer a:active {
 }
 
 .fade-in.fade-animation {
-    animation: fadeIn forwards 0.15s ease-out;
+    animation: fadeIn forwards 0.2s ease-out;
 }
 
 .fade-in.fade-animation:nth-child(1) {

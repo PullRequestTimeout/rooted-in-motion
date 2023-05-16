@@ -736,6 +736,10 @@
     fill: var(--clr-bronze-2);
 }
 
+.btn--fancy:hover svg {
+    filter: drop-shadow(0 0 0.5em var(--clr-bronze-1));
+}
+
 @media screen and (min-width: 640px) {
     .vision__hero {
         padding: 1em 2em;
