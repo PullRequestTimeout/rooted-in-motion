@@ -283,7 +283,7 @@
 	z-index: 100;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 4em;
+	gap: 5em 3em;
 }
 
 .client-symptoms__card {
@@ -353,6 +353,7 @@
 .client-symptoms__card p {
 	position: absolute;
 	color: #fff;
+	line-height: 1.25;
 	top: 5.5rem;
 	text-align: center;
 	width: 8rem;
@@ -898,7 +899,7 @@
 }
 
 .promise__consultation a {
-	color: var(--clr-bronze-2);
+	color: var(--clr-bronze-1);
 	font-size: 1.6em;
 }
 

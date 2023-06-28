@@ -218,6 +218,7 @@ span::selection {
 
 html {
 	background-color: var(--clr-bronze-5);
+	color: var(--clr-black);
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
