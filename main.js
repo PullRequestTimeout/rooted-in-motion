@@ -18,7 +18,6 @@ if (document.getElementById("servicesLink")) {
 document.querySelector("main").addEventListener("click", () => {
 	if (document.getElementById("navCheckbox").checked == true) {
 		closeNav();
-		changeNavStyle();
 	}
 });
 
@@ -53,6 +52,7 @@ function changeNavStyle() {
 
 function closeNav() {
 	document.getElementById("navCheckbox").checked = false;
+	changeNavStyle();
 }
 
 function navbarOpacity() {
@@ -62,6 +62,34 @@ function navbarOpacity() {
 		header.classList.add("header--fade");
 	} else {
 		header.classList.remove("header--fade");
+	}
+}
+
+let navTouchStartY = 0;
+let navTouchEndY = 0;
+
+const gestureZone = document.querySelector("nav");
+
+gestureZone.addEventListener(
+	"touchstart",
+	function (event) {
+		navTouchStartY = event.changedTouches[0].screenY;
+	},
+	false
+);
+
+gestureZone.addEventListener(
+	"touchend",
+	function (event) {
+		navTouchEndY = event.changedTouches[0].screenY;
+		handleGesture();
+	},
+	false
+);
+
+function handleGesture() {
+	if (navTouchStartY > navTouchEndY && navTouchStartY - navTouchEndY > 20) {
+		closeNav();
 	}
 }
 
