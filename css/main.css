@@ -289,31 +289,22 @@ header {
 header nav {
 	touch-action: none;
 	position: absolute;
-	/*text-align: left;*/
-	z-index: 1001;
+	z-index: 999;
 	top: 100%;
 	right: 0;
 	width: 100%;
 	transform: scale(1, 0);
 	transform: transform 400ms ease-in-out;
 	transform-origin: top;
-}
-
-header nav ul {
-	list-style: none;
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 0;
-	height: 70vh;
-	z-index: 999;
 	gap: 3em;
+	height: 70vh;
 }
 
 .navbar__link-group {
-	/* margin-bottom: 2em; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -321,9 +312,9 @@ header nav ul {
 }
 
 .navbar__linebreak {
-	height: 2px;
+	border: none;
+	border-bottom: 2px solid var(--clr-bronze-2);
 	width: 8rem;
-	background-color: #e59c42;
 }
 
 .navbar__links {
@@ -416,16 +407,10 @@ header nav ul {
 		width: 18em;
 	}
 
-	.navbar__checkbox:not(:checked) ~ nav {
-		all: unset;
-	}
-
+	.navbar__checkbox:not(:checked) ~ nav,
 	nav {
 		all: unset;
-	}
-
-	header nav ul {
-		height: unset;
+		transform: unset;
 		display: grid;
 		grid-template-columns: 1fr auto;
 		gap: 2em;
@@ -464,7 +449,7 @@ header nav ul {
 @media screen and (min-width: 1536px) {
 	header {
 		padding: 1em 10em;
-		width: calc(100% - 20em);
+		width: calc(100% - 19em);
 	}
 }
 

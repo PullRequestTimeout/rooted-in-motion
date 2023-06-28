@@ -17,7 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@700&family=Raleway:wght@300;400&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print"
+        onload="this.media='all'">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="/assets/icons/favicon-32x32.png" />
@@ -71,19 +72,14 @@
             </svg>
         </label>
         <nav>
-            <ul>
-                <div class="navbar__link-group">
-                    <li><a href="/" class="navbar__links">Home</a></li>
-                    <div class="navbar__linebreak"></div>
-                    <li><a href="/pages/about.html" class="navbar__links">About</a></li>
-                    <div class="navbar__linebreak"></div>
-                    <li><a href="/pages/contact.html" class="navbar__links">Contact</a></li>
-                </div>
-                <li class="btn--cta">
-                    <a class="btn btn--primary" href="https://madhucollective.janeapp.com/#/staff_member/42">Book
-                        Session</a>
-                </li>
-            </ul>
+            <div class="navbar__link-group">
+                <a href="/" class="navbar__links">Home</a>
+                <hr class="navbar__linebreak">
+                <a href="/pages/about.html" class="navbar__links">About</a>
+                <hr class="navbar__linebreak">
+                <a href="/pages/contact.html" class="navbar__links">Contact</a>
+            </div>
+            <a class="btn btn--primary" href="https://madhucollective.janeapp.com/#/staff_member/42">Book Session</a>
         </nav>
 
     </header>
