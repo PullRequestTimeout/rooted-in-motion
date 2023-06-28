@@ -228,8 +228,6 @@ body {
 	overflow-x: hidden;
 }
 
-/* TODO: Make section padding responsive. Maybe reduce to 1 or 2em for mobile and tablet */
-
 section {
 	padding: 2em 0;
 }
