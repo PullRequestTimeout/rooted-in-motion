@@ -7,7 +7,7 @@
 document
 	.getElementById("navCheckbox")
 	.addEventListener("input", changeNavStyle);
-window.addEventListener("scroll", navbarOpacity);
+window.addEventListener("scroll", navbarOpacity, { passive: true });
 document.body.onload = closeNav();
 if (document.getElementById("servicesLink")) {
 	document.getElementById("servicesLink").addEventListener("click", () => {
@@ -75,7 +75,7 @@ gestureZone.addEventListener(
 	function (event) {
 		navTouchStartY = event.changedTouches[0].screenY;
 	},
-	false
+	{ passive: true }
 );
 
 gestureZone.addEventListener(
@@ -84,7 +84,7 @@ gestureZone.addEventListener(
 		navTouchEndY = event.changedTouches[0].screenY;
 		handleGesture();
 	},
-	false
+	{ passive: true }
 );
 
 function handleGesture() {
