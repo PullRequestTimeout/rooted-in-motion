@@ -221,6 +221,19 @@ html {
 	color: var(--clr-black);
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	overscroll-behavior-y: none;
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: 9px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgba(155, 155, 155, 0.5);
+	border: transparent;
 }
 
 body {
