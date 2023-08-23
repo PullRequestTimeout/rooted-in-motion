@@ -8,7 +8,12 @@ document
 	.getElementById("navCheckbox")
 	.addEventListener("input", changeNavStyle);
 window.addEventListener("scroll", navbarOpacity, { passive: true });
-document.body.onload = closeNav();
+
+// This affects the hover css effect on desktop navbar, if statement should fix it
+if (window.innerWidth < 1024) {
+	document.body.onload = closeNav();
+}
+
 if (document.getElementById("servicesLink")) {
 	document.getElementById("servicesLink").addEventListener("click", () => {
 		closeNav();
